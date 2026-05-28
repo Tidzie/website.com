@@ -1,0 +1,166 @@
+<!-- REUSABLE COMPONENT: PROVIDER SIGNUP -->
+<section id="signup" class="py-24 bg-white relative overflow-hidden">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+      
+      <!-- SIGNUP LEFT: PREMIUM APPLICATION FORM (7 Columns) -->
+      <div class="lg:col-span-7 bg-white border border-gray-100 rounded-3xl p-8 sm:p-10 shadow-[0_20px_50px_rgba(0,0,0,0.02)] hover:border-gray-200 transition-all reveal-on-scroll">
+        
+        <!-- Badge & Header -->
+        <div class="mb-8">
+          <span class="text-xs font-semibold text-green-600 uppercase tracking-widest font-display">Join the Network</span>
+          <h2 class="text-2xl sm:text-3xl font-extrabold text-gray-900 font-display mt-2 tracking-tight">Apply as a Mukova Provider</h2>
+          <p class="text-sm text-gray-500 mt-2">
+            Are you a top-tier Machine Learning, Data Science, or DevOps engineer? Apply to join our exclusive network of elite experts and access premium global contracts.
+          </p>
+        </div>
+
+        <form id="provider-signup-form" class="space-y-6" novalidate>
+          
+          <!-- Name & Email Grid -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+            <div>
+              <label for="provider-name" class="block text-xs font-bold text-gray-700 uppercase tracking-wider mb-2">Full Name *</label>
+              <div class="flex items-center gap-3 px-4 py-3 rounded-xl border border-gray-200 bg-gray-50/30 focus-within:border-green-500 focus-within:bg-white transition-all">
+                <i data-lucide="user" class="w-4 h-4 text-gray-400 shrink-0"></i>
+                <input type="text" id="provider-name" required placeholder="Tariro Moyo" class="w-full text-sm text-gray-800 bg-transparent border-0 outline-none focus:ring-0 placeholder:text-gray-400" />
+              </div>
+            </div>
+            <div>
+              <label for="provider-email" class="block text-xs font-bold text-gray-700 uppercase tracking-wider mb-2">Email Address *</label>
+              <div class="flex items-center gap-3 px-4 py-3 rounded-xl border border-gray-200 bg-gray-50/30 focus-within:border-green-500 focus-within:bg-white transition-all">
+                <i data-lucide="mail" class="w-4 h-4 text-gray-400 shrink-0"></i>
+                <input type="email" id="provider-email" required placeholder="elena@example.com" class="w-full text-sm text-gray-800 bg-transparent border-0 outline-none focus:ring-0 placeholder:text-gray-400" />
+              </div>
+            </div>
+          </div>
+
+          <!-- Phone & Expertise Grid -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+            <div>
+              <label for="provider-phone" class="block text-xs font-bold text-gray-700 uppercase tracking-wider mb-2">Phone / WhatsApp *</label>
+              <div class="flex items-center gap-3 px-4 py-3 rounded-xl border border-gray-200 bg-gray-50/30 focus-within:border-green-500 focus-within:bg-white transition-all">
+                <i data-lucide="phone" class="w-4 h-4 text-gray-400 shrink-0"></i>
+                <input type="tel" id="provider-phone" required placeholder="+263 78 526 1617" class="w-full text-sm text-gray-800 bg-transparent border-0 outline-none focus:ring-0 placeholder:text-gray-400" />
+              </div>
+            </div>
+            <div>
+              <label for="provider-expertise" class="block text-xs font-bold text-gray-700 uppercase tracking-wider mb-2">Core Expertise *</label>
+              <div class="flex items-center gap-3 px-4 py-3 rounded-xl border border-gray-200 bg-gray-50/30 focus-within:border-green-500 focus-within:bg-white transition-all">
+                <i data-lucide="cpu" class="w-4 h-4 text-gray-400 shrink-0"></i>
+                <select id="provider-expertise" required class="w-full text-sm text-gray-800 bg-transparent border-0 outline-none focus:ring-0 appearance-none cursor-pointer">
+                  <option value="" disabled selected>Select specialization...</option>
+                  <option value="nlp">Natural Language Processing (NLP)</option>
+                  <option value="cv">Computer Vision & Sensing</option>
+                  <option value="llm">LLMs & Neural Architecture</option>
+                  <option value="mlovps">MLOps & Cloud Orchestration</option>
+                  <option value="rl">Reinforcement Learning & Robotics</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <!-- Message -->
+          <div>
+            <label for="provider-message" class="block text-xs font-bold text-gray-700 uppercase tracking-wider mb-2">Introduce Yourself & Your Experience *</label>
+            <div class="flex items-start gap-3 px-4 py-3 rounded-xl border border-gray-200 bg-gray-50/30 focus-within:border-green-500 focus-within:bg-white transition-all">
+              <i data-lucide="message-square" class="w-4 h-4 text-gray-400 shrink-0 mt-1"></i>
+              <textarea id="provider-message" required rows="3" placeholder="Briefly describe your ML background, scaling models, or production systems built..." class="w-full text-sm text-gray-800 bg-transparent border-0 outline-none focus:ring-0 placeholder:text-gray-400 resize-none"></textarea>
+            </div>
+          </div>
+
+          <!-- Drag and Drop Resume Uploader -->
+          <div>
+            <label class="block text-xs font-bold text-gray-700 uppercase tracking-wider mb-2">Upload CV / Resume (Optional)</label>
+            <div id="provider-upload-zone" class="relative group border-2 border-dashed border-gray-200 rounded-2xl p-5 text-center cursor-pointer hover:border-green-400 bg-gray-50/30 hover:bg-white transition-all">
+              <input type="file" id="provider-file-input" class="hidden" accept=".pdf,.doc,.docx" />
+              
+              <div id="provider-upload-feedback" class="flex flex-col items-center justify-center gap-2 text-sm text-gray-500">
+                <div class="w-10 h-10 rounded-xl bg-gray-50 flex items-center justify-center text-gray-400 group-hover:bg-green-50 group-hover:text-green-600 transition-all">
+                  <i data-lucide="file-text" class="w-5 h-5"></i>
+                </div>
+                <span>Drag and drop resume here, or <span class="text-green-600 font-medium">browse</span></span>
+              </div>
+              
+              <button id="provider-upload-clear" type="button" class="hidden absolute top-2 right-2 p-1.5 rounded-lg bg-gray-150 hover:bg-gray-200 text-gray-500 hover:text-gray-700 transition-all z-10">
+                <i data-lucide="x" class="w-4 h-4"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- Action Buttons -->
+          <div class="flex flex-col sm:flex-row gap-4 pt-2">
+            <button type="submit" class="flex-1 py-3.5 rounded-xl text-sm font-semibold text-white bg-green-600 hover:bg-green-700 active:scale-98 transition-all shadow-md shadow-green-500/10 hover-glow">
+              Submit Application
+            </button>
+            <a href="https://wa.me/263785261617" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center gap-2 py-3.5 px-6 rounded-xl text-sm font-semibold text-gray-800 bg-gray-50 hover:bg-gray-100 border border-gray-200/60 active:scale-95 transition-all shrink-0">
+              <i data-lucide="phone" class="w-4 h-4 text-green-600"></i>
+              <span>Quick WhatsApp Pitch</span>
+            </a>
+          </div>
+
+        </form>
+      </div>
+
+      <!-- SIGNUP RIGHT: DECORATIVE TECH PANEL ILLUSTRATION (5 Columns) -->
+      <div class="lg:col-span-5 relative flex justify-center reveal-on-scroll" style="transition-delay: 200ms;">
+        <!-- Aura mesh behind -->
+        <div class="absolute w-80 h-80 rounded-full bg-green-500/10 blur-3xl -z-10 animate-pulse-soft"></div>
+
+        <!-- Glass container graphic -->
+        <div class="relative w-full max-w-sm rounded-3xl bg-gray-900 border border-gray-800 shadow-2xl p-6 flex flex-col justify-between text-left overflow-hidden">
+          <div class="absolute inset-0 bg-gradient-to-b from-green-500/[0.02] to-emerald-500/[0.06] -z-10"></div>
+          
+          <div class="flex items-center justify-between border-b border-gray-800 pb-3">
+            <span class="flex items-center gap-2">
+              <span class="w-2.5 h-2.5 rounded-full bg-green-500 animate-ping"></span>
+              <span class="text-[10px] font-mono text-green-400 tracking-wider">ENGINEER_PORTAL_ACTIVE</span>
+            </span>
+            <i data-lucide="terminal" class="w-4 h-4 text-gray-500"></i>
+          </div>
+
+          <!-- Abstract SVG Dashboard portraying ML model training metrics -->
+          <div class="my-6 flex justify-center items-center">
+            <svg class="w-full h-48" viewBox="0 0 200 130" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <!-- Grid Matrix -->
+              <path d="M10 20H190M10 40H190M10 60H190M10 80H190M10 100H190M10 120H190" stroke="#1f2937" stroke-width="1" />
+              <path d="M20 10V120M50 10V120M80 10V120M110 10V120M140 10V120M170 10V120" stroke="#1f2937" stroke-width="1" />
+
+              <!-- Epoch Curve (Training line) -->
+              <path d="M20 110 C 60 110, 70 50, 110 45 C 130 42, 140 30, 180 20" stroke="#10b981" stroke-width="3" stroke-linecap="round" />
+              <path d="M20 110 C 60 110, 70 50, 110 45 C 130 42, 140 30, 180 20" stroke="#10b981" stroke-width="6" stroke-linecap="round" opacity="0.3" />
+
+              <!-- Val Loss Curve (Dashed red/gray curve) -->
+              <path d="M20 100 C 60 90, 80 75, 110 60 C 140 45, 150 42, 180 38" stroke="#9ca3af" stroke-width="2" stroke-dasharray="4 4" stroke-linecap="round" />
+
+              <!-- Node checkpoints -->
+              <circle cx="110" cy="45" r="5" fill="#10b981" />
+              <circle cx="110" cy="45" r="10" stroke="#10b981" stroke-width="1.5" class="animate-ping" />
+              
+              <circle cx="180" cy="20" r="4" fill="#34d399" />
+
+              <!-- Metric overlay label -->
+              <rect x="100" y="70" width="85" height="35" rx="6" fill="#1f2937" stroke="#374151" stroke-width="1" />
+              <text x="108" y="83" fill="#9ca3af" font-family="monospace" font-size="7">LOSS: 0.042</text>
+              <text x="108" y="96" fill="#10b981" font-family="monospace" font-size="7" font-weight="bold">ACCURACY: 99.82%</text>
+            </svg>
+          </div>
+
+          <!-- Bottom metrics -->
+          <div class="border-t border-gray-800 pt-3 text-[10px] font-mono text-gray-500 space-y-1">
+            <div class="flex items-center justify-between">
+              <span>ACTIVE PIPELINE CONTRACTS</span>
+              <span class="text-white font-bold">148</span>
+            </div>
+            <div class="flex items-center justify-between">
+              <span>AVG CONTRACT RATE</span>
+              <span class="text-green-400 font-bold">$125 / hr</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>

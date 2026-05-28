@@ -1,0 +1,1418 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- SEO Meta Tags -->
+  <title>Mukova AI | Premium Enterprise AI Matching & Engineering Governance</title>
+  <meta name="description" content="Unlock verified AI opportunities with confidence. Mukova AI matches enterprise workloads with top-tier machine learning developers under air-gapped security.">
+  <meta name="keywords" content="AI Startup, Machine Learning, Vetted Developers, MLOps, AI Matching, SaaS Landing, Enterprise AI, Model Auditing">
+  <meta name="author" content="Mukova AI Technologies">
+  <meta name="robots" content="index, follow">
+  
+  <!-- Open Graph / Meta -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Mukova AI | Premium Enterprise AI Matching">
+  <meta property="og:description" content="Unlock verified AI opportunities with confidence. Match with top-tier machine learning developers under secure milestone validations.">
+  <meta property="og:site_name" content="Mukova AI">
+
+  <!-- Favicon Mock -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%2316a34a' stroke-width='2'><path stroke-linecap='round' stroke-linejoin='round' d='M13 10V3L4 14h7v7l9-11h-7z'/></svg>">
+
+  <!-- Core Tailwind CSS Play CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Tailwind Custom Colors and Typography Config -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            display: ['Poppins', 'sans-serif'],
+          },
+          colors: {
+            green: {
+              50: '#f0fdf4',
+              100: '#dcfce7',
+              200: '#bbf7d0',
+              300: '#86efac',
+              400: '#4ade80',
+              500: '#22c55e',
+              600: '#16a34a',
+              700: '#15803d',
+              800: '#166534',
+              900: '#14532d',
+              950: '#052e16',
+            },
+            gray: {
+              50: '#f9fafb',
+              100: '#f3f4f6',
+              150: '#ebedf0',
+              200: '#e5e7eb',
+              300: '#d1d5db',
+              400: '#9ca3af',
+              450: '#8c95a5',
+              500: '#6b7280',
+              550: '#5c6475',
+              600: '#4b5563',
+              700: '#374151',
+              750: '#2c3545',
+              800: '#1f2937',
+              850: '#1a2332',
+              900: '#111827',
+              950: '#030712',
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Lucide Icons via CDN -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- Custom Core stylesheet linking -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-white text-gray-900 overflow-x-hidden">
+
+  <!-- 1. STICKY NAVBAR -->
+  <header id="navbar-header" class="fixed top-0 left-0 right-0 z-50 w-full transition-all duration-300 glass-navbar py-4">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-12">
+        
+        <!-- Brand Logo / Custom SVG -->
+        <a href="#home" class="flex items-center gap-2 group focus:outline-none" aria-label="Mukova AI Home">
+          <div class="flex items-center justify-center w-10 h-10 rounded-xl bg-gradient-to-tr from-green-600 to-green-400 text-white shadow-md shadow-green-500/20 group-hover:scale-105 transition-transform duration-300">
+            <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" />
+            </svg>
+          </div>
+          <div class="flex flex-col">
+            <span class="font-display text-xl font-bold text-gray-900 tracking-tight leading-none">Mukova <span class="text-green-600">AI</span></span>
+            <span class="text-[9px] uppercase tracking-widest text-gray-500 font-semibold mt-0.5">Smarter Solutions</span>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation Menu -->
+        <nav class="hidden md:flex items-center gap-8" aria-label="Desktop navigation">
+          <a href="#home" class="nav-link relative text-sm font-medium text-green-600 transition-colors duration-300 hover:text-green-600" aria-current="page">
+            Home
+            <span class="nav-dot absolute -bottom-1.5 left-1/2 -translate-x-1/2 w-1.5 h-1.5 rounded-full bg-green-600 scale-100 transition-transform duration-300"></span>
+          </a>
+          <a href="#about" class="nav-link relative text-sm font-medium text-gray-600 transition-colors duration-300 hover:text-green-600">
+            About
+            <span class="nav-dot absolute -bottom-1.5 left-1/2 -translate-x-1/2 w-1.5 h-1.5 rounded-full bg-green-600 scale-0 transition-transform duration-300"></span>
+          </a>
+          <a href="#services" class="nav-link relative text-sm font-medium text-gray-600 transition-colors duration-300 hover:text-green-600">
+            Services
+            <span class="nav-dot absolute -bottom-1.5 left-1/2 -translate-x-1/2 w-1.5 h-1.5 rounded-full bg-green-600 scale-0 transition-transform duration-300"></span>
+          </a>
+          <a href="#team" class="nav-link relative text-sm font-medium text-gray-600 transition-colors duration-300 hover:text-green-600">
+            Team
+            <span class="nav-dot absolute -bottom-1.5 left-1/2 -translate-x-1/2 w-1.5 h-1.5 rounded-full bg-green-600 scale-0 transition-transform duration-300"></span>
+          </a>
+          <a href="#testimonials" class="nav-link relative text-sm font-medium text-gray-600 transition-colors duration-300 hover:text-green-600">
+            Testimonials
+            <span class="nav-dot absolute -bottom-1.5 left-1/2 -translate-x-1/2 w-1.5 h-1.5 rounded-full bg-green-600 scale-0 transition-transform duration-300"></span>
+          </a>
+          <a href="#contact" class="nav-link relative text-sm font-medium text-gray-600 transition-colors duration-300 hover:text-green-600">
+            Contact
+            <span class="nav-dot absolute -bottom-1.5 left-1/2 -translate-x-1/2 w-1.5 h-1.5 rounded-full bg-green-600 scale-0 transition-transform duration-300"></span>
+          </a>
+        </nav>
+
+        <!-- CTA Buttons -->
+        <div class="hidden md:flex items-center gap-4">
+          <a href="https://wa.me/263785261617" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 px-5 py-2.5 rounded-xl text-sm font-semibold text-white bg-green-600 hover:bg-green-700 active:scale-95 transition-all duration-300 shadow-md shadow-green-500/10 hover-glow animate-pulse-soft">
+            <i data-lucide="phone" class="w-4 h-4"></i>
+            <span>WhatsApp Chat</span>
+          </a>
+        </div>
+
+        <!-- Mobile Hamburger Button -->
+        <button id="mobile-menu-btn" class="md:hidden flex items-center justify-center p-2.5 rounded-xl border border-gray-200 text-gray-700 bg-white/50 hover:bg-gray-50 focus:outline-none transition-all duration-300" aria-expanded="false" aria-controls="mobile-menu-drawer" aria-label="Toggle Navigation Menu">
+          <svg class="icon-menu w-6 h-6 block" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16m-7 6h7" />
+          </svg>
+          <svg class="icon-close w-6 h-6 hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </button>
+
+      </div>
+    </div>
+
+    <!-- Mobile Drawer Menu -->
+    <div id="mobile-menu-drawer" class="hidden md:hidden absolute top-full left-0 right-0 h-[calc(100vh-80px)] overflow-y-auto w-full flex-col px-4 pt-4 pb-12 bg-white/95 backdrop-blur-xl shadow-2xl space-y-2.5">
+      <a href="#home" class="mobile-menu-link flex items-center gap-3 px-4 py-3 rounded-xl text-sm font-semibold text-green-600 bg-green-50/50">
+        <i data-lucide="home" class="w-4 h-4"></i>
+        Home
+      </a>
+      <a href="#about" class="mobile-menu-link flex items-center gap-3 px-4 py-3 rounded-xl text-sm font-medium text-gray-700 hover:bg-gray-50 hover:text-green-600 transition-colors">
+        <i data-lucide="info" class="w-4 h-4"></i>
+        About
+      </a>
+      <a href="#services" class="mobile-menu-link flex items-center gap-3 px-4 py-3 rounded-xl text-sm font-medium text-gray-700 hover:bg-gray-50 hover:text-green-600 transition-colors">
+        <i data-lucide="briefcase" class="w-4 h-4"></i>
+        Services
+      </a>
+      <a href="#team" class="mobile-menu-link flex items-center gap-3 px-4 py-3 rounded-xl text-sm font-medium text-gray-700 hover:bg-gray-50 hover:text-green-600 transition-colors">
+        <i data-lucide="users" class="w-4 h-4"></i>
+        Team
+      </a>
+      <a href="#testimonials" class="mobile-menu-link flex items-center gap-3 px-4 py-3 rounded-xl text-sm font-medium text-gray-700 hover:bg-gray-50 hover:text-green-600 transition-colors">
+        <i data-lucide="message-square" class="w-4 h-4"></i>
+        Testimonials
+      </a>
+      <a href="#contact" class="mobile-menu-link flex items-center gap-3 px-4 py-3 rounded-xl text-sm font-medium text-gray-700 hover:bg-gray-50 hover:text-green-600 transition-colors">
+        <i data-lucide="mail" class="w-4 h-4"></i>
+        Contact
+      </a>
+      <hr class="border-gray-100 my-2">
+      <div class="px-4 pt-2">
+        <a href="https://wa.me/263785261617" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center gap-2 w-full py-3.5 rounded-xl text-sm font-semibold text-white bg-green-600 hover:bg-green-700 transition-all duration-300 shadow-md shadow-green-500/10">
+          <i data-lucide="phone" class="w-5 h-5"></i>
+          <span>Chat on WhatsApp</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- 2. HERO SECTION -->
+  <section id="home-section" class="relative min-h-screen pt-28 pb-16 flex items-center bg-gradient-to-b from-green-50/20 via-white to-white overflow-hidden">
+    <div class="absolute top-1/4 left-10 w-72 h-72 rounded-full bg-green-200/20 blur-3xl -z-10 animate-pulse-soft"></div>
+    <div class="absolute bottom-10 right-10 w-96 h-96 rounded-full bg-emerald-100/10 blur-3xl -z-10" style="animation-delay: 2s;"></div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+        <div class="lg:col-span-7 flex flex-col justify-center space-y-8 text-left reveal-on-scroll">
+          
+          <div class="inline-flex items-center gap-2 self-start px-3 py-1.5 rounded-full text-xs font-semibold text-green-700 bg-green-100/60 border border-green-200/50 backdrop-blur-sm">
+            <span class="flex h-2 w-2 rounded-full bg-green-500 animate-ping"></span>
+            <span>Next-Gen Artificial Intelligence</span>
+          </div>
+
+          <div class="space-y-4">
+            <h1 class="font-display text-4xl sm:text-5xl lg:text-6xl font-extrabold text-gray-900 tracking-tight leading-[1.1] sm:leading-[1.05]">
+              Unlock Premium <br class="hidden sm:inline" />
+              <span class="text-transparent bg-clip-text bg-gradient-to-r from-green-600 to-emerald-700">AI Opportunities</span> <br/>
+              With Complete Confidence.
+            </h1>
+            <p class="text-base sm:text-lg text-gray-500 max-w-xl font-normal leading-relaxed">
+              Connecting companies with vetted machine learning architects and executing production-ready AI pipelines. From automated matching to elite project governance.
+            </p>
+          </div>
+
+          <!-- Input query & Search Box -->
+          <div class="max-w-xl w-full bg-white p-2 rounded-2xl border border-gray-100 shadow-xl shadow-gray-100/50 flex flex-col sm:flex-row gap-2 transition-all hover:border-gray-200">
+            <div class="flex-1 flex items-center gap-3 px-3 min-h-[48px]">
+              <i data-lucide="search" class="w-5 h-5 text-gray-400 shrink-0"></i>
+              <input id="hero-search-input" type="text" placeholder="Explain your project (e.g. 'Build conversational bot')" class="w-full text-sm text-gray-800 bg-transparent border-0 outline-none focus:ring-0 placeholder:text-gray-400" />
+            </div>
+            <button id="hero-search-btn" class="sm:px-6 py-3 rounded-xl text-sm font-semibold text-white bg-green-600 hover:bg-green-700 active:scale-98 transition-all shrink-0">
+              Search Experts
+            </button>
+          </div>
+
+          <!-- Drag and Drop uploader -->
+          <div class="max-w-xl w-full">
+            <label class="block text-xs font-semibold text-gray-400 uppercase tracking-wider mb-2">Instant Project Upload (Optional)</label>
+            <div id="hero-upload-zone" class="relative group border-2 border-dashed border-gray-200 rounded-2xl p-6 text-center cursor-pointer hover:border-green-400 bg-white/50 backdrop-blur-sm transition-all">
+              <input type="file" id="hero-file-input" class="hidden" accept=".pdf,.doc,.docx,.txt,.zip" />
+              
+              <div id="hero-upload-feedback" class="flex flex-col items-center justify-center gap-2 text-sm text-gray-500 transition-colors">
+                <div class="w-10 h-10 rounded-xl bg-gray-50 flex items-center justify-center text-gray-400 group-hover:bg-green-50 group-hover:text-green-600 transition-colors">
+                  <i data-lucide="upload-cloud" class="w-5 h-5"></i>
+                </div>
+                <span>Drag and drop project details here, or <span class="text-green-600 font-medium">browse</span></span>
+              </div>
+              
+              <button id="hero-upload-clear" type="button" class="hidden absolute top-2 right-2 p-1.5 rounded-lg bg-gray-100 hover:bg-gray-200 text-gray-500 hover:text-gray-700 transition-all z-10" aria-label="Clear selected file">
+                <i data-lucide="x" class="w-4 h-4"></i>
+              </button>
+            </div>
+          </div>
+
+          <div class="flex flex-wrap items-center gap-4">
+            <a href="#about" class="px-8 py-3.5 rounded-xl text-sm font-semibold text-white bg-gradient-to-r from-green-600 to-emerald-600 hover:from-green-700 hover:to-emerald-700 active:scale-95 transition-all shadow-lg shadow-green-600/10 hover-glow">
+              Get Started Free
+            </a>
+            <a href="https://wa.me/263785261617" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 px-8 py-3.5 rounded-xl text-sm font-semibold text-gray-800 bg-gray-50 hover:bg-gray-100 border border-gray-200/60 active:scale-95 transition-all">
+              <i data-lucide="phone" class="w-4 h-4 text-green-600"></i>
+              <span>Submit via WhatsApp</span>
+            </a>
+          </div>
+
+        </div>
+
+        <!-- HERO RIGHT: OPEN DOOR VECTOR -->
+        <div class="lg:col-span-5 relative flex justify-center items-center select-none reveal-on-scroll transform scale-90 sm:scale-100 mt-10 lg:mt-0 origin-center" style="transition-delay: 200ms;">
+          <div class="absolute w-80 h-80 sm:w-96 sm:h-96 rounded-full border border-green-500/10 border-dashed animate-spin" style="animation-duration: 40s;"></div>
+          <div class="absolute w-60 h-60 sm:w-72 sm:h-72 rounded-full border border-emerald-500/20 border-dashed animate-spin" style="animation-duration: 20s; animation-direction: reverse;"></div>
+
+          <div class="relative w-72 h-96 sm:w-80 sm:h-[420px] rounded-3xl bg-white border border-gray-100 shadow-2xl p-6 flex flex-col justify-between overflow-hidden animate-float">
+            <div class="absolute inset-0 bg-gradient-to-b from-green-500/[0.01] to-emerald-500/[0.05] -z-10"></div>
+            
+            <div class="flex items-center justify-between border-b border-gray-100 pb-3">
+              <div class="flex items-center gap-2">
+                <span class="w-3 h-3 rounded-full bg-red-400"></span>
+                <span class="w-3 h-3 rounded-full bg-yellow-400"></span>
+                <span class="w-3 h-3 rounded-full bg-green-400"></span>
+              </div>
+              <span class="text-[10px] font-mono text-green-600 bg-green-50 px-2 py-0.5 rounded-full font-bold">MUKOVA_CORE_v2.0</span>
+            </div>
+
+            <!-- SVG Illustration of glowing open door -->
+            <div class="my-6 flex-1 flex items-center justify-center relative">
+              <div class="absolute w-28 h-52 bg-green-400/25 blur-2xl rounded-full -z-10"></div>
+
+              <svg class="w-48 h-64" viewBox="0 0 200 260" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M10 20H190M10 50H190M10 80H190M10 110H190M10 140H190M10 170H190M10 200H190M10 230H190" stroke="#f1f5f9" stroke-width="1.5" />
+                <path d="M30 10V250M60 10V250M90 10V250M120 10V250M150 10V250M180 10V250" stroke="#f1f5f9" stroke-width="1.5" />
+
+                <rect x="50" y="40" width="100" height="180" rx="16" stroke="#e2e8f0" stroke-width="4" />
+                <rect x="50" y="40" width="100" height="180" rx="16" stroke="#16a34a" stroke-width="2" stroke-dasharray="8 6" class="animate-pulse" />
+
+                <g transform="translate(50, 40) rotate(-18, 0, 90)">
+                  <rect x="0" y="0" width="100" height="180" rx="16" fill="url(#door-glass)" stroke="#16a34a" stroke-width="3" />
+                  <path d="M20 30L80 30M20 60L80 60M20 90L80 90M20 120L80 120" stroke="rgba(22, 163, 74, 0.2)" stroke-width="2" />
+                  <circle cx="85" cy="90" r="6" fill="#16a34a" />
+                  <circle cx="85" cy="90" r="10" stroke="#16a34a" stroke-width="1.5" class="animate-ping" />
+                </g>
+
+                <line x1="100" y1="130" x2="160" y2="80" stroke="#16a34a" stroke-width="2" stroke-dasharray="4 4" />
+                <circle cx="160" cy="80" r="6" fill="#16a34a" />
+                <line x1="100" y1="130" x2="175" y2="150" stroke="#16a34a" stroke-width="2" stroke-dasharray="4 4" />
+                <circle cx="175" cy="150" r="4" fill="#059669" />
+                <line x1="100" y1="130" x2="165" y2="200" stroke="#16a34a" stroke-width="2" stroke-dasharray="4 4" />
+                <circle cx="165" cy="200" r="5" fill="#34d399" />
+
+                <defs>
+                  <linearGradient id="door-glass" x1="0" y1="0" x2="100" y2="180" gradientUnits="userSpaceOnUse">
+                    <stop offset="0%" stop-color="rgba(255, 255, 255, 0.85)" />
+                    <stop offset="100%" stop-color="rgba(220, 252, 231, 0.65)" />
+                  </linearGradient>
+                </defs>
+              </svg>
+            </div>
+
+            <div class="flex items-center justify-between border-t border-gray-100 pt-3 text-[10px] font-mono text-gray-400">
+              <span class="flex items-center gap-1.5">
+                <span class="w-1.5 h-1.5 rounded-full bg-green-500 animate-ping"></span>
+                LIVE DATA STREAM
+              </span>
+              <span>ACC: 99.8%</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. ABOUT SECTION -->
+  <section id="about" class="py-16 md:py-24 bg-white relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      
+      <div class="text-center max-w-3xl mx-auto mb-16 reveal-on-scroll">
+        <h2 class="text-base font-semibold text-green-600 uppercase tracking-widest font-display">Who We Are</h2>
+        <p class="mt-3 text-3xl sm:text-4xl font-extrabold text-gray-900 font-display tracking-tight">
+          Empowering Enterprise Progress with Modern AI Infrastructure
+        </p>
+        <div class="mt-4 h-1 w-12 bg-green-500 rounded-full mx-auto"></div>
+        <p class="mt-4 text-base sm:text-lg text-gray-500">
+          Mukova AI matches businesses with verified artificial intelligence engineers, ensuring transparent pricing, absolute accountability, and high-fidelity product output.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        
+        <div class="relative group bg-white border border-gray-100 rounded-3xl p-8 hover-lift shadow-[0_8px_30px_rgb(0,0,0,0.02)] hover:border-green-200 transition-all duration-300 reveal-on-scroll">
+          <div class="absolute -inset-px rounded-3xl bg-gradient-to-tr from-green-500/0 to-green-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none -z-10"></div>
+          <div class="w-14 h-14 rounded-2xl bg-green-50 flex items-center justify-center text-green-600 mb-6 group-hover:scale-110 transition-transform duration-300 shadow-sm">
+            <i data-lucide="building-2" class="w-6 h-6"></i>
+          </div>
+          <h3 class="font-display text-xl font-bold text-gray-900 mb-3">About Us</h3>
+          <p class="text-sm text-gray-500 leading-relaxed">
+            Founded by machine learning architects, Mukova AI is an elite AI service and matching ecosystem designed to bridge the talent gap between elite developers and progressive enterprises worldwide.
+          </p>
+        </div>
+
+        <div class="relative group bg-white border border-gray-100 rounded-3xl p-8 hover-lift shadow-[0_8px_30px_rgb(0,0,0,0.02)] hover:border-green-200 transition-all duration-300 reveal-on-scroll" style="transition-delay: 100ms;">
+          <div class="absolute -inset-px rounded-3xl bg-gradient-to-tr from-green-500/0 to-green-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none -z-10"></div>
+          <div class="w-14 h-14 rounded-2xl bg-green-50 flex items-center justify-center text-green-600 mb-6 group-hover:scale-110 transition-transform duration-300 shadow-sm">
+            <i data-lucide="target" class="w-6 h-6"></i>
+          </div>
+          <h3 class="font-display text-xl font-bold text-gray-900 mb-3">Why We Exist</h3>
+          <p class="text-sm text-gray-500 leading-relaxed">
+            Traditional sourcing systems fail because they cannot evaluate algorithmic capabilities. We exist to guarantee engineering validity, removing high risks from software development.
+          </p>
+        </div>
+
+        <div class="relative group bg-white border border-gray-100 rounded-3xl p-8 hover-lift shadow-[0_8px_30px_rgb(0,0,0,0.02)] hover:border-green-200 transition-all duration-300 reveal-on-scroll" style="transition-delay: 200ms;">
+          <div class="absolute -inset-px rounded-3xl bg-gradient-to-tr from-green-500/0 to-green-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none -z-10"></div>
+          <div class="w-14 h-14 rounded-2xl bg-green-50 flex items-center justify-center text-green-600 mb-6 group-hover:scale-110 transition-transform duration-300 shadow-sm">
+            <i data-lucide="gift" class="w-6 h-6"></i>
+          </div>
+          <h3 class="font-display text-xl font-bold text-gray-900 mb-3">What You Get</h3>
+          <p class="text-sm text-gray-500 leading-relaxed">
+            Direct access to vetted engineers, rigorous milestones with independent evaluations, pre-designed templates, full copyright rights, and robust continuous quality checks.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. HOW IT WORKS SECTION -->
+  <section id="how-it-works" class="py-16 md:py-24 bg-gray-50/50 border-y border-gray-100 relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-16 reveal-on-scroll">
+        <h2 class="text-base font-semibold text-green-600 uppercase tracking-widest font-display">Workflow Engine</h2>
+        <p class="mt-3 text-3xl sm:text-4xl font-extrabold text-gray-900 font-display tracking-tight">
+          The Mukova Precision Roadmap
+        </p>
+        <div class="mt-4 h-1 w-12 bg-green-500 rounded-full mx-auto"></div>
+        <p class="mt-4 text-base sm:text-lg text-gray-500">
+          From initial diagnostic to final integration, our structured pipeline guarantees engineering rigor, clear accountability, and outstanding project delivery.
+        </p>
+      </div>
+
+      <!-- Stepped Grid timeline layout -->
+      <div class="relative grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-y-12">
+        
+        <div class="relative group bg-white border border-gray-100 rounded-2xl p-6 shadow-sm hover:border-green-300 transition-all reveal-on-scroll">
+          <div class="flex items-center justify-between mb-4">
+            <div class="w-12 h-12 rounded-xl bg-green-50 flex items-center justify-center text-green-600 group-hover:scale-110 group-hover:bg-green-600 group-hover:text-white transition-all duration-300">
+              <i data-lucide="file-text" class="w-5 h-5"></i>
+            </div>
+            <span class="text-xs font-mono font-bold text-gray-300 group-hover:text-green-500 transition-colors">01 / SUBMIT</span>
+          </div>
+          <h3 class="font-display text-base font-bold text-gray-900 mb-2">1. Submit Request</h3>
+          <p class="text-xs text-gray-500 leading-relaxed">
+            Define your application requirements and technical specs using our onboarding wizard or drag-and-drop tool.
+          </p>
+        </div>
+
+        <div class="relative group bg-white border border-gray-100 rounded-2xl p-6 shadow-sm hover:border-green-300 transition-all reveal-on-scroll" style="transition-delay: 50ms;">
+          <div class="flex items-center justify-between mb-4">
+            <div class="w-12 h-12 rounded-xl bg-green-50 flex items-center justify-center text-green-600 group-hover:scale-110 group-hover:bg-green-600 group-hover:text-white transition-all duration-300">
+              <i data-lucide="calculator" class="w-5 h-5"></i>
+            </div>
+            <span class="text-xs font-mono font-bold text-gray-300 group-hover:text-green-500 transition-colors">02 / ESTIMATE</span>
+          </div>
+          <h3 class="font-display text-base font-bold text-gray-900 mb-2">2. Review & Quote</h3>
+          <p class="text-xs text-gray-500 leading-relaxed">
+            Our technical architects review your specifications and provide a granular project estimate, timelines, and architectural roadmap.
+          </p>
+        </div>
+
+        <div class="relative group bg-white border border-gray-100 rounded-2xl p-6 shadow-sm hover:border-green-300 transition-all reveal-on-scroll" style="transition-delay: 100ms;">
+          <div class="flex items-center justify-between mb-4">
+            <div class="w-12 h-12 rounded-xl bg-green-50 flex items-center justify-center text-green-600 group-hover:scale-110 group-hover:bg-green-600 group-hover:text-white transition-all duration-300">
+              <i data-lucide="check-square" class="w-5 h-5"></i>
+            </div>
+            <span class="text-xs font-mono font-bold text-gray-300 group-hover:text-green-500 transition-colors">03 / LOCK IN</span>
+          </div>
+          <h3 class="font-display text-base font-bold text-gray-900 mb-2">3. Confirm</h3>
+          <p class="text-xs text-gray-550 leading-relaxed">
+            Align on milestones and finalize scope. Safe-keep funds inside secure, smart-contract-backed milestone escrows for complete financial peace of mind.
+          </p>
+        </div>
+
+        <div class="relative group bg-white border border-gray-100 rounded-2xl p-6 shadow-sm hover:border-green-300 transition-all reveal-on-scroll" style="transition-delay: 150ms;">
+          <div class="flex items-center justify-between mb-4">
+            <div class="w-12 h-12 rounded-xl bg-green-50 flex items-center justify-center text-green-600 group-hover:scale-110 group-hover:bg-green-600 group-hover:text-white transition-all duration-300">
+              <i data-lucide="user-check" class="w-5 h-5"></i>
+            </div>
+            <span class="text-xs font-mono font-bold text-gray-300 group-hover:text-green-500 transition-colors">04 / MATCH</span>
+          </div>
+          <h3 class="font-display text-base font-bold text-gray-900 mb-2">4. Match Experts</h3>
+          <p class="text-xs text-gray-500 leading-relaxed">
+            Mukova's matchmaker pairs your task with the top 1% of ML engineers specializing in your industry, stack, and domain requirements.
+          </p>
+        </div>
+
+        <div class="relative group bg-white border border-gray-100 rounded-2xl p-6 shadow-sm hover:border-green-300 transition-all reveal-on-scroll" style="transition-delay: 200ms;">
+          <div class="flex items-center justify-between mb-4">
+            <div class="w-12 h-12 rounded-xl bg-green-50 flex items-center justify-center text-green-600 group-hover:scale-110 group-hover:bg-green-600 group-hover:text-white transition-all duration-300">
+              <i data-lucide="shield-alert" class="w-5 h-5"></i>
+            </div>
+            <span class="text-xs font-mono font-bold text-gray-300 group-hover:text-green-500 transition-colors">05 / AUDIT</span>
+          </div>
+          <h3 class="font-display text-base font-bold text-gray-900 mb-2">5. Evaluate</h3>
+          <p class="text-xs text-gray-500 leading-relaxed">
+            Continuous testing and code reviews. Each milestone's algorithmic outputs are validated in private sandbox testbeds by senior engineers.
+          </p>
+        </div>
+
+        <div class="relative group bg-white border border-gray-100 rounded-2xl p-6 shadow-sm hover:border-green-300 transition-all reveal-on-scroll" style="transition-delay: 250ms;">
+          <div class="flex items-center justify-between mb-4">
+            <div class="w-12 h-12 rounded-xl bg-green-50 flex items-center justify-center text-green-600 group-hover:scale-110 group-hover:bg-green-600 group-hover:text-white transition-all duration-300">
+              <i data-lucide="lightbulb" class="w-5 h-5"></i>
+            </div>
+            <span class="text-xs font-mono font-bold text-gray-300 group-hover:text-green-500 transition-colors">06 / ADVISE</span>
+          </div>
+          <h3 class="font-display text-base font-bold text-gray-900 mb-2">6. Recommendations</h3>
+          <p class="text-xs text-gray-500 leading-relaxed">
+            Receive clear guidance on model weights optimization, scalability infrastructure improvements, cost reductions, and architectural health.
+          </p>
+        </div>
+
+        <div class="relative group bg-white border border-gray-100 rounded-2xl p-6 shadow-sm hover:border-green-300 transition-all reveal-on-scroll" style="transition-delay: 300ms;">
+          <div class="flex items-center justify-between mb-4">
+            <div class="w-12 h-12 rounded-xl bg-green-50 flex items-center justify-center text-green-600 group-hover:scale-110 group-hover:bg-green-600 group-hover:text-white transition-all duration-300">
+              <i data-lucide="cpu" class="w-5 h-5"></i>
+            </div>
+            <span class="text-xs font-mono font-bold text-gray-300 group-hover:text-green-500 transition-colors">07 / COMPILE</span>
+          </div>
+          <h3 class="font-display text-base font-bold text-gray-900 mb-2">7. Project Execution</h3>
+          <p class="text-xs text-gray-500 leading-relaxed">
+            Active deployment. Models are containerized and deployed into production via automated pipelines, ready for enterprise workload consumption.
+          </p>
+        </div>
+
+        <div class="relative group bg-white border border-gray-100 rounded-2xl p-6 shadow-sm hover:border-green-300 transition-all reveal-on-scroll" style="transition-delay: 350ms;">
+          <div class="flex items-center justify-between mb-4">
+            <div class="w-12 h-12 rounded-xl bg-green-50 flex items-center justify-center text-green-600 group-hover:scale-110 group-hover:bg-green-600 group-hover:text-white transition-all duration-300">
+              <i data-lucide="star" class="w-5 h-5"></i>
+            </div>
+            <span class="text-xs font-mono font-bold text-gray-300 group-hover:text-green-500 transition-colors">08 / EVOLVE</span>
+          </div>
+          <h3 class="font-display text-base font-bold text-gray-900 mb-2">8. Feedback</h3>
+          <p class="text-xs text-gray-500 leading-relaxed">
+            Collect performance metrics, establish feedback loops, and iterate models with new training datasets for continuous improvement.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 5. SERVICES SECTION -->
+  <section id="services" class="py-16 md:py-24 bg-white relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-20 reveal-on-scroll">
+        <h2 class="text-base font-semibold text-green-600 uppercase tracking-widest font-display">Our Offerings</h2>
+        <p class="mt-3 text-3xl sm:text-4xl font-extrabold text-gray-900 font-display tracking-tight">
+          Tailored Service Models for High-Impact Projects
+        </p>
+        <div class="mt-4 h-1 w-12 bg-green-500 rounded-full mx-auto"></div>
+        <p class="mt-4 text-base sm:text-lg text-gray-500">
+          Choose the exact level of assistance your business requires, from autonomous expert matchfinding to comprehensive, end-to-end algorithmic project governance.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 items-stretch">
+        
+        <!-- Tier 1 -->
+        <div class="relative group bg-white border border-gray-150 rounded-3xl p-8 flex flex-col justify-between hover-lift shadow-[0_8px_30px_rgb(0,0,0,0.01)] reveal-on-scroll">
+          <div>
+            <div class="flex items-center gap-3 mb-6">
+              <div class="w-12 h-12 rounded-xl bg-gray-50 flex items-center justify-center text-gray-600 group-hover:bg-green-50 group-hover:text-green-600 transition-colors">
+                <i data-lucide="user-search" class="w-6 h-6"></i>
+              </div>
+              <div>
+                <span class="text-[10px] uppercase font-bold text-gray-400 tracking-wider">Independent Matching</span>
+                <h3 class="font-display text-xl font-bold text-gray-900 leading-tight">Self-Service</h3>
+              </div>
+            </div>
+            <p class="text-sm text-gray-550 leading-relaxed mb-6">
+              For businesses with established ML teams that need quick access to high-fidelity specialized experts for isolated, high-skilled sprints.
+            </p>
+            
+            <hr class="border-gray-100 my-6">
+            
+            <ul class="space-y-4 mb-8">
+              <li class="flex items-start gap-3 text-sm text-gray-600">
+                <span class="p-0.5 rounded-full bg-green-100 text-green-600 shrink-0 mt-0.5"><i data-lucide="check" class="w-3.5 h-3.5"></i></span>
+                <span>Direct expert matched profile sourcing</span>
+              </li>
+              <li class="flex items-start gap-3 text-sm text-gray-600">
+                <span class="p-0.5 rounded-full bg-green-100 text-green-600 shrink-0 mt-0.5"><i data-lucide="check" class="w-3.5 h-3.5"></i></span>
+                <span>Automated scheduling & contract setup</span>
+              </li>
+              <li class="flex items-start gap-3 text-sm text-gray-600">
+                <span class="p-0.5 rounded-full bg-green-100 text-green-600 shrink-0 mt-0.5"><i data-lucide="check" class="w-3.5 h-3.5"></i></span>
+                <span>Standard client dashboard access</span>
+              </li>
+              <li class="flex items-start gap-3 text-sm text-gray-600">
+                <span class="p-0.5 rounded-full bg-green-100 text-green-600 shrink-0 mt-0.5"><i data-lucide="check" class="w-3.5 h-3.5"></i></span>
+                <span>Milestone payment management</span>
+              </li>
+            </ul>
+          </div>
+
+          <a href="#contact" class="w-full text-center py-3 rounded-xl text-sm font-semibold border border-gray-200 hover:border-green-600 text-gray-700 hover:text-green-600 hover:bg-green-50/20 active:scale-98 transition-all">
+            Explore Matches
+          </a>
+        </div>
+
+        <!-- Tier 2 (Featured Card) -->
+        <div class="relative group bg-white border-2 border-green-500 rounded-3xl p-8 flex flex-col justify-between hover-lift shadow-[0_20px_50px_rgba(22,163,74,0.08)] reveal-on-scroll" style="transition-delay: 100ms;">
+          <div class="absolute -top-4 left-1/2 -translate-x-1/2 px-4 py-1 rounded-full text-xs font-semibold text-white bg-gradient-to-r from-green-600 to-emerald-600 shadow-md">
+            Highly Recommended
+          </div>
+
+          <div>
+            <div class="flex items-center gap-3 mb-6">
+              <div class="w-12 h-12 rounded-xl bg-green-100 flex items-center justify-center text-green-600 group-hover:scale-105 transition-all">
+                <i data-lucide="sparkles" class="w-6 h-6"></i>
+              </div>
+              <div>
+                <span class="text-[10px] uppercase font-bold text-green-600 tracking-wider">Assisted Placement</span>
+                <h3 class="font-display text-xl font-bold text-gray-900 leading-tight">Guided Matching</h3>
+              </div>
+            </div>
+            <p class="text-sm text-gray-550 leading-relaxed mb-6">
+              Our matchmakers and lead engineers actively consult on project specs, shortlisting three elite, highly-aligned engineers and executing interviews on your behalf.
+            </p>
+            
+            <hr class="border-gray-100 my-6">
+            
+            <ul class="space-y-4 mb-8">
+              <li class="flex items-start gap-3 text-sm text-gray-600">
+                <span class="p-0.5 rounded-full bg-green-100 text-green-600 shrink-0 mt-0.5"><i data-lucide="check" class="w-3.5 h-3.5"></i></span>
+                <span class="font-medium text-gray-900">Custom project requirements consulting</span>
+              </li>
+              <li class="flex items-start gap-3 text-sm text-gray-600">
+                <span class="p-0.5 rounded-full bg-green-100 text-green-600 shrink-0 mt-0.5"><i data-lucide="check" class="w-3.5 h-3.5"></i></span>
+                <span>Top 3 vetted candidate shortlisting</span>
+              </li>
+              <li class="flex items-start gap-3 text-sm text-gray-600">
+                <span class="p-0.5 rounded-full bg-green-100 text-green-600 shrink-0 mt-0.5"><i data-lucide="check" class="w-3.5 h-3.5"></i></span>
+                <span>24/7 dedicated support representative</span>
+              </li>
+              <li class="flex items-start gap-3 text-sm text-gray-600">
+                <span class="p-0.5 rounded-full bg-green-100 text-green-600 shrink-0 mt-0.5"><i data-lucide="check" class="w-3.5 h-3.5"></i></span>
+                <span>Code validation & output review checks</span>
+              </li>
+            </ul>
+          </div>
+
+          <a href="#contact" class="w-full text-center py-3.5 rounded-xl text-sm font-semibold text-white bg-green-600 hover:bg-green-700 hover:shadow-lg hover:shadow-green-600/20 active:scale-98 transition-all hover-glow">
+            Consult Our Team
+          </a>
+        </div>
+
+        <!-- Tier 3 (Dark Accent Card) -->
+        <div class="relative group bg-gray-900 border border-gray-800 rounded-3xl p-8 flex flex-col justify-between hover-lift shadow-2xl reveal-on-scroll" style="transition-delay: 200ms;">
+          <div>
+            <div class="flex items-center gap-3 mb-6">
+              <div class="w-12 h-12 rounded-xl bg-gray-800 flex items-center justify-center text-green-400 group-hover:bg-green-500 group-hover:text-white transition-all">
+                <i data-lucide="shield-check" class="w-6 h-6"></i>
+              </div>
+              <div>
+                <span class="text-[10px] uppercase font-bold text-green-400 tracking-wider">Complete Governance</span>
+                <h3 class="font-display text-xl font-bold text-white leading-tight">Full Project Mgmt</h3>
+              </div>
+            </div>
+            <p class="text-sm text-gray-400 leading-relaxed mb-6">
+              Hand over complete responsibility. We assign a Dedicated Lead PM, assemble a custom team, manage daily standups, and deploy ready-to-use production systems.
+            </p>
+            
+            <hr class="border-gray-800 my-6">
+            
+            <ul class="space-y-4 mb-8">
+              <li class="flex items-start gap-3 text-sm text-gray-350">
+                <span class="p-0.5 rounded-full bg-green-950 text-green-400 shrink-0 mt-0.5"><i data-lucide="check" class="w-3.5 h-3.5"></i></span>
+                <span>Turnkey product development & deployment</span>
+              </li>
+              <li class="flex items-start gap-3 text-sm text-gray-350">
+                <span class="p-0.5 rounded-full bg-green-950 text-green-400 shrink-0 mt-0.5"><i data-lucide="check" class="w-3.5 h-3.5"></i></span>
+                <span class="text-white font-medium">Assembled team of elite ML specialists</span>
+              </li>
+              <li class="flex items-start gap-3 text-sm text-gray-355">
+                <span class="p-0.5 rounded-full bg-green-950 text-green-400 shrink-0 mt-0.5"><i data-lucide="check" class="w-3.5 h-3.5"></i></span>
+                <span>Bi-weekly architectural sandboxed audits</span>
+              </li>
+              <li class="flex items-start gap-3 text-sm text-gray-355">
+                <span class="p-0.5 rounded-full bg-green-950 text-green-400 shrink-0 mt-0.5"><i data-lucide="check" class="w-3.5 h-3.5"></i></span>
+                <span>Guaranteed IP protection & transfer</span>
+              </li>
+            </ul>
+          </div>
+
+          <a href="#contact" class="w-full text-center py-3 rounded-xl text-sm font-semibold text-white bg-gray-800 hover:bg-gray-700 active:scale-98 transition-all border border-gray-700">
+            Get Turnkey Quote
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. TEAM SECTION -->
+  <section id="team" class="py-16 md:py-24 bg-gray-50/50 border-y border-gray-100 relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-20 reveal-on-scroll">
+        <h2 class="text-base font-semibold text-green-600 uppercase tracking-widest font-display">Leadership Team</h2>
+        <p class="mt-3 text-3xl sm:text-4xl font-extrabold text-gray-900 font-display tracking-tight">
+          Guided by Visionary AI Engineering Experts
+        </p>
+        <div class="mt-4 h-1 w-12 bg-green-500 rounded-full mx-auto"></div>
+        <p class="mt-4 text-base sm:text-lg text-gray-500">
+          Mukova is founded and directed by world-class software architects, academic researchers, and machine learning professionals committed to operational excellence.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+        
+        <!-- Team 1 -->
+        <div class="bg-white border border-gray-100 rounded-3xl p-6 text-center hover-lift shadow-[0_8px_30px_rgb(0,0,0,0.02)] reveal-on-scroll">
+          <div class="relative w-28 h-28 mx-auto mb-6">
+            <div class="absolute inset-0 rounded-full border-2 border-green-500 border-dashed animate-spin" style="animation-duration: 15s;"></div>
+            <div class="absolute inset-1.5 rounded-full overflow-hidden bg-gradient-to-tr from-green-600 to-emerald-400">
+              <svg viewBox="0 0 100 100" class="w-full h-full text-white/90">
+                <circle cx="50" cy="40" r="20" fill="white" opacity="0.9" />
+                <path d="M20 85 C 20 60, 80 60, 80 85 Z" fill="white" />
+              </svg>
+            </div>
+          </div>
+          <h3 class="font-display text-lg font-bold text-gray-900 leading-tight">Dr. Tariro Moyo</h3>
+          <p class="text-xs font-semibold text-green-600 uppercase tracking-wider mt-1">Chief AI Scientist</p>
+          <p class="text-xs text-gray-500 leading-relaxed mt-3 px-2">
+            Former MIT CSAIL researcher. 10+ years optimizing computer vision and neural architecture models.
+          </p>
+          <div class="flex items-center justify-center gap-3 mt-6 border-t border-gray-100 pt-4">
+            <a href="#" class="w-8 h-8 rounded-lg bg-gray-50 hover:bg-green-50 text-gray-500 hover:text-green-600 flex items-center justify-center transition-colors" aria-label="LinkedIn Profile"><i data-lucide="linkedin" class="w-4 h-4"></i></a>
+            <a href="#" class="w-8 h-8 rounded-lg bg-gray-50 hover:bg-green-50 text-gray-500 hover:text-green-600 flex items-center justify-center transition-colors" aria-label="Twitter Profile"><i data-lucide="twitter" class="w-4 h-4"></i></a>
+            <a href="#" class="w-8 h-8 rounded-lg bg-gray-50 hover:bg-green-50 text-gray-500 hover:text-green-600 flex items-center justify-center transition-colors" aria-label="GitHub Profile"><i data-lucide="github" class="w-4 h-4"></i></a>
+          </div>
+        </div>
+
+        <!-- Team 2 -->
+        <div class="bg-white border border-gray-100 rounded-3xl p-6 text-center hover-lift shadow-[0_8px_30px_rgb(0,0,0,0.02)] reveal-on-scroll" style="transition-delay: 100ms;">
+          <div class="relative w-28 h-28 mx-auto mb-6">
+            <div class="absolute inset-0 rounded-full border-2 border-green-500 border-dashed animate-spin" style="animation-duration: 20s; animation-direction: reverse;"></div>
+            <div class="absolute inset-1.5 rounded-full overflow-hidden bg-gradient-to-tr from-emerald-600 to-green-300">
+              <svg viewBox="0 0 100 100" class="w-full h-full text-white/90">
+                <circle cx="50" cy="38" r="18" fill="white" opacity="0.9" />
+                <path d="M15 88 C 15 62, 85 62, 85 88 Z" fill="white" />
+              </svg>
+            </div>
+          </div>
+          <h3 class="font-display text-lg font-bold text-gray-900 leading-tight">Steven Mujana</h3>
+          <p class="text-xs font-semibold text-green-600 uppercase tracking-wider mt-1">Chief Executive Officer</p>
+          <p class="text-xs text-gray-500 leading-relaxed mt-3 px-2">
+            Enterprise technologist. Ex-Stripe Engineering Lead with extensive background in building scaling ecosystems.
+          </p>
+          <div class="flex items-center justify-center gap-3 mt-6 border-t border-gray-100 pt-4">
+            <a href="#" class="w-8 h-8 rounded-lg bg-gray-50 hover:bg-green-50 text-gray-550 hover:text-green-600 flex items-center justify-center transition-colors" aria-label="LinkedIn Profile"><i data-lucide="linkedin" class="w-4 h-4"></i></a>
+            <a href="#" class="w-8 h-8 rounded-lg bg-gray-50 hover:bg-green-50 text-gray-555 hover:text-green-600 flex items-center justify-center transition-colors" aria-label="Twitter Profile"><i data-lucide="twitter" class="w-4 h-4"></i></a>
+          </div>
+        </div>
+
+        <!-- Team 3 -->
+        <div class="bg-white border border-gray-100 rounded-3xl p-6 text-center hover-lift shadow-[0_8px_30px_rgb(0,0,0,0.02)] reveal-on-scroll" style="transition-delay: 200ms;">
+          <div class="relative w-28 h-28 mx-auto mb-6">
+            <div class="absolute inset-0 rounded-full border-2 border-green-500 border-dashed animate-spin" style="animation-duration: 25s;"></div>
+            <div class="absolute inset-1.5 rounded-full overflow-hidden bg-gradient-to-tr from-green-700 to-green-400">
+              <svg viewBox="0 0 100 100" class="w-full h-full text-white/90">
+                <circle cx="50" cy="40" r="19" fill="white" opacity="0.9" />
+                <path d="M18 86 C 18 61, 82 61, 82 86 Z" fill="white" />
+              </svg>
+            </div>
+          </div>
+          <h3 class="font-display text-lg font-bold text-gray-900 leading-tight">Farai Kudzaishe</h3>
+          <p class="text-xs font-semibold text-green-600 uppercase tracking-wider mt-1">VP of Cloud Infrastructure</p>
+          <p class="text-xs text-gray-550 leading-relaxed mt-3 px-2">
+            Kubernetes contributor. Focused on deploying low-latency LLM scaling models across geo-distributed nodes.
+          </p>
+          <div class="flex items-center justify-center gap-3 mt-6 border-t border-gray-100 pt-4">
+            <a href="#" class="w-8 h-8 rounded-lg bg-gray-50 hover:bg-green-50 text-gray-500 hover:text-green-600 flex items-center justify-center transition-colors" aria-label="LinkedIn Profile"><i data-lucide="linkedin" class="w-4 h-4"></i></a>
+            <a href="#" class="w-8 h-8 rounded-lg bg-gray-50 hover:bg-green-50 text-gray-500 hover:text-green-600 flex items-center justify-center transition-colors" aria-label="GitHub Profile"><i data-lucide="github" class="w-4 h-4"></i></a>
+          </div>
+        </div>
+
+        <!-- Team 4 -->
+        <div class="bg-white border border-gray-100 rounded-3xl p-6 text-center hover-lift shadow-[0_8px_30px_rgb(0,0,0,0.02)] reveal-on-scroll" style="transition-delay: 300ms;">
+          <div class="relative w-28 h-28 mx-auto mb-6">
+            <div class="absolute inset-0 rounded-full border-2 border-green-500 border-dashed animate-spin" style="animation-duration: 30s; animation-direction: reverse;"></div>
+            <div class="absolute inset-1.5 rounded-full overflow-hidden bg-gradient-to-tr from-emerald-700 to-emerald-450">
+              <svg viewBox="0 0 100 100" class="w-full h-full text-white/90">
+                <circle cx="50" cy="42" r="17" fill="white" opacity="0.9" />
+                <path d="M22 84 C 22 63, 78 63, 78 84 Z" fill="white" />
+              </svg>
+            </div>
+          </div>
+          <h3 class="font-display text-lg font-bold text-gray-900 leading-tight">Nyasha Zhou</h3>
+          <p class="text-xs font-semibold text-green-600 uppercase tracking-wider mt-1">Head of Engineering Operations</p>
+          <p class="text-xs text-gray-500 leading-relaxed mt-3 px-2">
+            Agile delivery specialist. Oversees vetting processes, project milestones, and client matching.
+          </p>
+          <div class="flex items-center justify-center gap-3 mt-6 border-t border-gray-100 pt-4">
+            <a href="#" class="w-8 h-8 rounded-lg bg-gray-50 hover:bg-green-50 text-gray-500 hover:text-green-600 flex items-center justify-center transition-colors" aria-label="LinkedIn Profile"><i data-lucide="linkedin" class="w-4 h-4"></i></a>
+            <a href="#" class="w-8 h-8 rounded-lg bg-gray-50 hover:bg-green-50 text-gray-500 hover:text-green-600 flex items-center justify-center transition-colors" aria-label="Twitter Profile"><i data-lucide="twitter" class="w-4 h-4"></i></a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 7. PROVIDER SIGNUP SECTION -->
+  <section id="signup" class="py-16 md:py-24 bg-white relative overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        
+        <div class="lg:col-span-7 bg-white border border-gray-100 rounded-3xl p-8 sm:p-10 shadow-[0_20px_50px_rgba(0,0,0,0.02)] hover:border-gray-200 transition-all reveal-on-scroll">
+          <div class="mb-8">
+            <span class="text-xs font-semibold text-green-600 uppercase tracking-widest font-display">Join the Network</span>
+            <h2 class="text-2xl sm:text-3xl font-extrabold text-gray-900 font-display mt-2 tracking-tight">Apply as a Mukova Provider</h2>
+            <p class="text-sm text-gray-500 mt-2">
+              Are you a top-tier Machine Learning, Data Science, or DevOps engineer? Apply to join our exclusive network of elite experts and access premium global contracts.
+            </p>
+          </div>
+
+          <form id="provider-signup-form" class="space-y-6" novalidate>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+              <div>
+                <label for="provider-name" class="block text-xs font-bold text-gray-700 uppercase tracking-wider mb-2">Full Name *</label>
+                <div class="flex items-center gap-3 px-4 py-3 rounded-xl border border-gray-200 bg-gray-50/30 focus-within:border-green-500 focus-within:bg-white transition-all">
+                  <i data-lucide="user" class="w-4 h-4 text-gray-400 shrink-0"></i>
+                  <input type="text" id="provider-name" required placeholder="Tariro Moyo" class="w-full text-sm text-gray-800 bg-transparent border-0 outline-none focus:ring-0 placeholder:text-gray-400" />
+                </div>
+              </div>
+              <div>
+                <label for="provider-email" class="block text-xs font-bold text-gray-700 uppercase tracking-wider mb-2">Email Address *</label>
+                <div class="flex items-center gap-3 px-4 py-3 rounded-xl border border-gray-200 bg-gray-50/30 focus-within:border-green-500 focus-within:bg-white transition-all">
+                  <i data-lucide="mail" class="w-4 h-4 text-gray-400 shrink-0"></i>
+                  <input type="email" id="provider-email" required placeholder="elena@example.com" class="w-full text-sm text-gray-800 bg-transparent border-0 outline-none focus:ring-0 placeholder:text-gray-400" />
+                </div>
+              </div>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+              <div>
+                <label for="provider-phone" class="block text-xs font-bold text-gray-700 uppercase tracking-wider mb-2">Phone / WhatsApp *</label>
+                <div class="flex items-center gap-3 px-4 py-3 rounded-xl border border-gray-200 bg-gray-50/30 focus-within:border-green-500 focus-within:bg-white transition-all">
+                  <i data-lucide="phone" class="w-4 h-4 text-gray-400 shrink-0"></i>
+                  <input type="tel" id="provider-phone" required placeholder="+263 78 526 1617" class="w-full text-sm text-gray-800 bg-transparent border-0 outline-none focus:ring-0 placeholder:text-gray-400" />
+                </div>
+              </div>
+              <div>
+                <label for="provider-expertise" class="block text-xs font-bold text-gray-700 uppercase tracking-wider mb-2">Core Expertise *</label>
+                <div class="flex items-center gap-3 px-4 py-3 rounded-xl border border-gray-200 bg-gray-50/30 focus-within:border-green-500 focus-within:bg-white transition-all">
+                  <i data-lucide="cpu" class="w-4 h-4 text-gray-400 shrink-0"></i>
+                  <select id="provider-expertise" required class="w-full text-sm text-gray-800 bg-transparent border-0 outline-none focus:ring-0 appearance-none cursor-pointer">
+                    <option value="" disabled selected>Select specialization...</option>
+                    <option value="nlp">Natural Language Processing (NLP)</option>
+                    <option value="cv">Computer Vision & Sensing</option>
+                    <option value="llm">LLMs & Neural Architecture</option>
+                    <option value="mlovps">MLOps & Cloud Orchestration</option>
+                    <option value="rl">Reinforcement Learning & Robotics</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <label for="provider-message" class="block text-xs font-bold text-gray-700 uppercase tracking-wider mb-2">Introduce Yourself & Your Experience *</label>
+              <div class="flex items-start gap-3 px-4 py-3 rounded-xl border border-gray-200 bg-gray-50/30 focus-within:border-green-500 focus-within:bg-white transition-all">
+                <i data-lucide="message-square" class="w-4 h-4 text-gray-400 shrink-0 mt-1"></i>
+                <textarea id="provider-message" required rows="3" placeholder="Briefly describe your ML background, scaling models, or production systems built..." class="w-full text-sm text-gray-800 bg-transparent border-0 outline-none focus:ring-0 placeholder:text-gray-400 resize-none"></textarea>
+              </div>
+            </div>
+
+            <div>
+              <label class="block text-xs font-bold text-gray-700 uppercase tracking-wider mb-2">Upload CV / Resume (Optional)</label>
+              <div id="provider-upload-zone" class="relative group border-2 border-dashed border-gray-200 rounded-2xl p-5 text-center cursor-pointer hover:border-green-400 bg-gray-50/30 hover:bg-white transition-all">
+                <input type="file" id="provider-file-input" class="hidden" accept=".pdf,.doc,.docx" />
+                
+                <div id="provider-upload-feedback" class="flex flex-col items-center justify-center gap-2 text-sm text-gray-500">
+                  <div class="w-10 h-10 rounded-xl bg-gray-50 flex items-center justify-center text-gray-400 group-hover:bg-green-50 group-hover:text-green-600 transition-all">
+                    <i data-lucide="file-text" class="w-5 h-5"></i>
+                  </div>
+                  <span>Drag and drop resume here, or <span class="text-green-600 font-medium">browse</span></span>
+                </div>
+                
+                <button id="provider-upload-clear" type="button" class="hidden absolute top-2 right-2 p-1.5 rounded-lg bg-gray-150 hover:bg-gray-200 text-gray-500 hover:text-gray-700 transition-all z-10">
+                  <i data-lucide="x" class="w-4 h-4"></i>
+                </button>
+              </div>
+            </div>
+
+            <div class="flex flex-col sm:flex-row gap-4 pt-2">
+              <button type="submit" class="flex-1 py-3.5 rounded-xl text-sm font-semibold text-white bg-green-600 hover:bg-green-700 active:scale-98 transition-all shadow-md shadow-green-500/10 hover-glow">
+                Submit Application
+              </button>
+              <a href="https://wa.me/263785261617" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center gap-2 py-3.5 px-6 rounded-xl text-sm font-semibold text-gray-800 bg-gray-50 hover:bg-gray-100 border border-gray-200/60 active:scale-95 transition-all shrink-0">
+                <i data-lucide="phone" class="w-4 h-4 text-green-600"></i>
+                <span>Quick WhatsApp Pitch</span>
+              </a>
+            </div>
+          </form>
+        </div>
+
+        <!-- Dashboard illustration -->
+        <div class="lg:col-span-5 relative flex justify-center reveal-on-scroll" style="transition-delay: 200ms;">
+          <div class="absolute w-80 h-80 rounded-full bg-green-500/10 blur-3xl -z-10 animate-pulse-soft"></div>
+
+          <div class="relative w-full max-w-sm rounded-3xl bg-gray-900 border border-gray-800 shadow-2xl p-6 flex flex-col justify-between text-left overflow-hidden">
+            <div class="absolute inset-0 bg-gradient-to-b from-green-500/[0.02] to-emerald-500/[0.06] -z-10"></div>
+            
+            <div class="flex items-center justify-between border-b border-gray-800 pb-3">
+              <span class="flex items-center gap-2">
+                <span class="w-2.5 h-2.5 rounded-full bg-green-500 animate-ping"></span>
+                <span class="text-[10px] font-mono text-green-400 tracking-wider">ENGINEER_PORTAL_ACTIVE</span>
+              </span>
+              <i data-lucide="terminal" class="w-4 h-4 text-gray-555"></i>
+            </div>
+
+            <div class="my-6 flex justify-center items-center">
+              <svg class="w-full h-48" viewBox="0 0 200 130" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M10 20H190M10 40H190M10 60H190M10 80H190M10 100H190M10 120H190" stroke="#1f2937" stroke-width="1" />
+                <path d="M20 10V120M50 10V120M80 10V120M110 10V120M140 10V120M170 10V120" stroke="#1f2937" stroke-width="1" />
+                <path d="M20 110 C 60 110, 70 50, 110 45 C 130 42, 140 30, 180 20" stroke="#10b981" stroke-width="3" stroke-linecap="round" />
+                <path d="M20 110 C 60 110, 70 50, 110 45 C 130 42, 140 30, 180 20" stroke="#10b981" stroke-width="6" stroke-linecap="round" opacity="0.3" />
+                <path d="M20 100 C 60 90, 80 75, 110 60 C 140 45, 150 42, 180 38" stroke="#9ca3af" stroke-width="2" stroke-dasharray="4 4" stroke-linecap="round" />
+                
+                <circle cx="110" cy="45" r="5" fill="#10b981" />
+                <circle cx="110" cy="45" r="10" stroke="#10b981" stroke-width="1.5" class="animate-ping" />
+                <circle cx="180" cy="20" r="4" fill="#34d399" />
+
+                <rect x="100" y="70" width="85" height="35" rx="6" fill="#1f2937" stroke="#374151" stroke-width="1" />
+                <text x="108" y="83" fill="#9ca3af" font-family="monospace" font-size="7">LOSS: 0.042</text>
+                <text x="108" y="96" fill="#10b981" font-family="monospace" font-size="7" font-weight="bold">ACCURACY: 99.82%</text>
+              </svg>
+            </div>
+
+            <div class="border-t border-gray-800 pt-3 text-[10px] font-mono text-gray-500 space-y-1">
+              <div class="flex items-center justify-between">
+                <span>ACTIVE PIPELINE CONTRACTS</span>
+                <span class="text-white font-bold">148</span>
+              </div>
+              <div class="flex items-center justify-between">
+                <span>AVG CONTRACT RATE</span>
+                <span class="text-green-400 font-bold">$125 / hr</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 8. TESTIMONIALS SECTION -->
+  <section id="testimonials" class="py-16 md:py-24 bg-gray-50/50 relative overflow-hidden">
+    <div class="absolute top-1/2 left-0 w-80 h-80 rounded-full bg-green-200/10 blur-3xl -z-10"></div>
+    <div class="absolute bottom-0 right-0 w-96 h-96 rounded-full bg-emerald-100/10 blur-3xl -z-10"></div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+      
+      <div class="text-center max-w-3xl mx-auto mb-16 reveal-on-scroll">
+        <h2 class="text-base font-semibold text-green-600 uppercase tracking-widest font-display">Client Trust</h2>
+        <p class="mt-3 text-3xl sm:text-4xl font-extrabold text-gray-900 font-display tracking-tight">
+          Validated by Progressive Enterprises
+        </p>
+        <div class="mt-4 h-1 w-12 bg-green-500 rounded-full mx-auto"></div>
+        <p class="mt-4 text-base sm:text-lg text-gray-500">
+          Read how forward-thinking software leaders, enterprise CTOs, and innovative startups deploy secure ML pipelines using Mukova's certified experts.
+        </p>
+      </div>
+
+      <!-- CAROUSEL SLIDER -->
+      <div id="testimonials-carousel" class="max-w-4xl mx-auto relative px-4 sm:px-12 reveal-on-scroll">
+        <div class="overflow-hidden rounded-3xl border border-gray-100 bg-white shadow-xl shadow-gray-100/40">
+          <div id="testimonial-track" class="flex transition-transform duration-500 ease-out cursor-grab active:cursor-grabbing" style="width: 100%; transform: translateX(0%);">
+            
+            <!-- SLIDE 1 -->
+            <div class="testimonial-slide w-full shrink-0 p-8 sm:p-12 flex flex-col justify-between">
+              <div class="space-y-6">
+                <div class="flex items-center gap-1 text-yellow-400">
+                  <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                  <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                  <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                  <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                  <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                </div>
+                <blockquote class="text-lg sm:text-xl font-medium text-gray-900 leading-relaxed italic">
+                  "Mukova AI radically transformed our engineering logistics. We matched with a senior MLOps specialist within 48 hours. They set up our pipeline models, saving us months of recruiting overhead."
+                </blockquote>
+              </div>
+              <div class="flex items-center gap-4 mt-8 pt-6 border-t border-gray-100">
+                <div class="w-12 h-12 rounded-xl bg-gradient-to-tr from-green-500 to-green-300 flex items-center justify-center font-display font-bold text-white shadow-md">
+                  KS
+                </div>
+                <div>
+                  <h4 class="font-display font-bold text-gray-900 text-sm">Kudakwashe Shumba</h4>
+                  <p class="text-xs text-gray-500 font-medium mt-0.5">VP of Infrastructure, LangTech Corporation</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- SLIDE 2 -->
+            <div class="testimonial-slide w-full shrink-0 p-8 sm:p-12 flex flex-col justify-between">
+              <div class="space-y-6">
+                <div class="flex items-center gap-1 text-yellow-400">
+                  <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                  <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                  <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                  <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                  <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                </div>
+                <blockquote class="text-lg sm:text-xl font-medium text-gray-900 leading-relaxed italic">
+                  "Having an independent auditing system on project milestones changes everything. The sandboxed code evaluations gave our executive team 100% confidence to deploy the algorithms to production."
+                </blockquote>
+              </div>
+              <div class="flex items-center gap-4 mt-8 pt-6 border-t border-gray-100">
+                <div class="w-12 h-12 rounded-xl bg-gradient-to-tr from-emerald-500 to-emerald-300 flex items-center justify-center font-display font-bold text-white shadow-md">
+                  RM
+                </div>
+                <div>
+                  <h4 class="font-display font-bold text-gray-900 text-sm">Rumbidzai Moyo</h4>
+                  <p class="text-xs text-gray-500 font-medium mt-0.5">Co-Founder, Synthetix.io</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- SLIDE 3 -->
+            <div class="testimonial-slide w-full shrink-0 p-8 sm:p-12 flex flex-col justify-between">
+              <div class="space-y-6">
+                <div class="flex items-center gap-1 text-yellow-400">
+                  <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                  <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                  <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                  <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                  <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                </div>
+                <blockquote class="text-lg sm:text-xl font-medium text-gray-900 leading-relaxed italic">
+                  "Their Full Project Management service is outstanding. Mukova's Lead Architect managed the entire ML lifecycle, delivering a recommender engine that increased client engagement by 32%."
+                </blockquote>
+              </div>
+              <div class="flex items-center gap-4 mt-8 pt-6 border-t border-gray-100">
+                <div class="w-12 h-12 rounded-xl bg-gradient-to-tr from-green-600 to-emerald-450 flex items-center justify-center font-display font-bold text-white shadow-md">
+                  TM
+                </div>
+                <div>
+                  <h4 class="font-display font-bold text-gray-900 text-sm">Tendai Mushore</h4>
+                  <p class="text-xs text-gray-500 font-medium mt-0.5">Chief Technology Officer, RetailSphere</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <button id="slider-prev" class="absolute top-1/2 -left-4 sm:-left-6 -translate-y-1/2 w-10 sm:w-12 h-10 sm:h-12 rounded-xl border border-gray-200 bg-white hover:bg-gray-50 text-gray-600 flex items-center justify-center shadow-lg transition-all active:scale-95 z-20" aria-label="Previous Slide">
+          <i data-lucide="arrow-left" class="w-5 h-5"></i>
+        </button>
+        <button id="slider-next" class="absolute top-1/2 -right-4 sm:-right-6 -translate-y-1/2 w-10 sm:w-12 h-10 sm:h-12 rounded-xl border border-gray-200 bg-white hover:bg-gray-50 text-gray-600 flex items-center justify-center shadow-lg transition-all active:scale-95 z-20" aria-label="Next Slide">
+          <i data-lucide="arrow-right" class="w-5 h-5"></i>
+        </button>
+      </div>
+
+      <div id="slider-dots" class="flex items-center justify-center gap-2.5 mt-8"></div>
+    </div>
+  </section>
+
+  <!-- 9. VALUES SECTION -->
+  <section id="values" class="py-16 md:py-24 bg-white relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-16 reveal-on-scroll">
+        <h2 class="text-base font-semibold text-green-600 uppercase tracking-widest font-display">Our Foundation</h2>
+        <p class="mt-3 text-3xl sm:text-4xl font-extrabold text-gray-900 font-display tracking-tight">
+          Core Values Propelling Engineering Excellence
+        </p>
+        <div class="mt-4 h-1 w-12 bg-green-500 rounded-full mx-auto"></div>
+        <p class="mt-4 text-base sm:text-lg text-gray-500">
+          Mukova operates under strict operational guardrails to build a cooperative, sustainable ecosystem centered around trust and mathematical precision.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+        
+        <!-- Value 1 -->
+        <div class="group bg-gray-50/50 hover:bg-white border border-gray-100 rounded-2xl p-6 text-left hover-lift shadow-[0_8px_30px_rgb(0,0,0,0.01)] hover:border-green-200 transition-all reveal-on-scroll">
+          <div class="w-12 h-12 rounded-xl bg-green-50 text-green-600 flex items-center justify-center mb-5 group-hover:bg-green-600 group-hover:text-white transition-all">
+            <i data-lucide="eye" class="w-5 h-5"></i>
+          </div>
+          <h3 class="font-display font-bold text-gray-900 text-lg mb-2">Transparency</h3>
+          <p class="text-xs text-gray-500 leading-relaxed">
+            Open communication and milestone-based pricing. Code quality assessments, model performance logs, and pricing architectures are fully visible at every checkpoint.
+          </p>
+        </div>
+
+        <!-- Value 2 -->
+        <div class="group bg-gray-50/50 hover:bg-white border border-gray-100 rounded-2xl p-6 text-left hover-lift shadow-[0_8px_30px_rgb(0,0,0,0.01)] hover:border-green-200 transition-all reveal-on-scroll" style="transition-delay: 100ms;">
+          <div class="w-12 h-12 rounded-xl bg-green-50 text-green-600 flex items-center justify-center mb-5 group-hover:bg-green-600 group-hover:text-white transition-all">
+            <i data-lucide="scale" class="w-5 h-5"></i>
+          </div>
+          <h3 class="font-display font-bold text-gray-900 text-lg mb-2">Fairness</h3>
+          <p class="text-xs text-gray-500 leading-relaxed">
+            Equitable contracts. Engineers retain true value for their mathematical ingenuity, while businesses receive premier market rates with zero hidden developer margins.
+          </p>
+        </div>
+
+        <!-- Value 3 -->
+        <div class="group bg-gray-50/50 hover:bg-white border border-gray-100 rounded-2xl p-6 text-left hover-lift shadow-[0_8px_30px_rgb(0,0,0,0.01)] hover:border-green-200 transition-all reveal-on-scroll" style="transition-delay: 200ms;">
+          <div class="w-12 h-12 rounded-xl bg-green-50 text-green-600 flex items-center justify-center mb-5 group-hover:bg-green-600 group-hover:text-white transition-all">
+            <i data-lucide="award" class="w-5 h-5"></i>
+          </div>
+          <h3 class="font-display font-bold text-gray-900 text-lg mb-2">Excellence</h3>
+          <p class="text-xs text-gray-500 leading-relaxed">
+            No compromise on quality. Sourced algorithms must fulfill robust sandboxed validations. Code standards follow strict regulatory security protocols.
+          </p>
+        </div>
+
+        <!-- Value 4 -->
+        <div class="group bg-gray-50/50 hover:bg-white border border-gray-100 rounded-2xl p-6 text-left hover-lift shadow-[0_8px_30px_rgb(0,0,0,0.01)] hover:border-green-200 transition-all reveal-on-scroll" style="transition-delay: 300ms;">
+          <div class="w-12 h-12 rounded-xl bg-green-50 text-green-600 flex items-center justify-center mb-5 group-hover:bg-green-600 group-hover:text-white transition-all">
+            <i data-lucide="globe" class="w-5 h-5"></i>
+          </div>
+          <h3 class="font-display font-bold text-gray-900 text-lg mb-2">Impact</h3>
+          <p class="text-xs text-gray-500 leading-relaxed">
+            Creating real business dividends. We focus on deploying ML projects that directly reduce operations costs, optimize automation pipelines, and increase profitability.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 10. PRIVACY SECTION -->
+  <section id="privacy" class="py-16 md:py-24 bg-gray-50/50 border-y border-gray-100 relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+        
+        <!-- Shield graphics -->
+        <div class="lg:col-span-5 relative flex justify-center items-center reveal-on-scroll">
+          <div class="absolute w-72 h-72 rounded-full bg-green-500/10 blur-3xl -z-10 animate-pulse-soft"></div>
+          
+          <div class="relative w-64 h-80 sm:w-72 sm:h-90 rounded-3xl bg-white border border-gray-150 shadow-2xl p-6 flex flex-col justify-between overflow-hidden animate-float">
+            <div class="absolute inset-0 bg-gradient-to-b from-green-500/[0.01] to-emerald-500/[0.05] -z-10"></div>
+            
+            <div class="flex items-center justify-between border-b border-gray-100 pb-3 text-[10px] font-mono text-gray-400">
+              <span class="flex items-center gap-1.5">
+                <span class="w-1.5 h-1.5 rounded-full bg-green-500 animate-ping"></span>
+                CIPHER_CORE_ENGAGED
+              </span>
+              <span>AES_256_GCM</span>
+            </div>
+
+            <div class="my-6 flex-1 flex items-center justify-center">
+              <svg class="w-40 h-48" viewBox="0 0 160 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="80" cy="95" r="55" stroke="#f1f5f9" stroke-width="1.5" />
+                <circle cx="80" cy="95" r="70" stroke="#f8fafc" stroke-width="1.5" />
+                <circle cx="80" cy="95" r="55" stroke="#10b981" stroke-width="1.5" stroke-dasharray="10 12" class="animate-spin" style="animation-duration: 30s;" />
+
+                <path d="M80 30 C 105 30, 130 20, 130 20 V 90 C 130 135, 80 170, 80 170 C 80 170, 30 135, 30 90 V 20 C 30 20, 55 30, 80 30 Z" fill="url(#shield-gradient)" stroke="#10b981" stroke-width="3" />
+                <path d="M80 40 C 98 40, 115 32, 115 32 V 88 C 115 125, 80 155, 80 155 C 80 155, 45 125, 45 88 V 32 C 45 32, 62 40, 80 40 Z" fill="rgba(220, 252, 231, 0.4)" stroke="#34d399" stroke-width="1" stroke-dasharray="4 4" />
+
+                <path d="M80 82 V 112 M70 97 H 90" stroke="#047857" stroke-width="3" stroke-linecap="round" />
+                <circle cx="80" cy="97" r="10" stroke="#047857" stroke-width="3" fill="#10b981" />
+                <circle cx="80" cy="97" r="4" fill="#047857" />
+
+                <defs>
+                  <linearGradient id="shield-gradient" x1="80" y1="30" x2="80" y2="170" gradientUnits="userSpaceOnUse">
+                    <stop offset="0%" stop-color="rgba(255, 255, 255, 0.95)" />
+                    <stop offset="100%" stop-color="rgba(209, 250, 229, 0.85)" />
+                  </linearGradient>
+                </defs>
+              </svg>
+            </div>
+
+            <div class="border-t border-gray-100 pt-3 flex items-center justify-between text-[10px] font-mono text-green-600 bg-green-50/50 px-3 py-1.5 rounded-xl font-bold">
+              <span>SECURE DATA SANDBOX</span>
+              <span>COMPLIANT</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="lg:col-span-7 flex flex-col justify-center space-y-6 text-left reveal-on-scroll" style="transition-delay: 200ms;">
+          <div>
+            <span class="text-xs font-semibold text-green-600 uppercase tracking-widest font-display">Data Sovereignty</span>
+            <h2 class="text-3xl sm:text-4xl font-extrabold text-gray-900 font-display mt-2 tracking-tight">Enterprise-Grade Security Foundations</h2>
+            <p class="text-base text-gray-500 mt-4 leading-relaxed">
+              Data sovereignty is not an afterthought at Mukova; it forms the core framework of our technical matching infrastructure. Your code remains yours, 100% of the time.
+            </p>
+          </div>
+
+          <hr class="border-gray-100 my-2">
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+            
+            <div class="flex items-start gap-4 p-4 rounded-2xl bg-white border border-gray-100/60 shadow-sm hover:border-green-200 transition-colors">
+              <div class="w-10 h-10 rounded-xl bg-green-50 flex items-center justify-center text-green-600 shrink-0">
+                <i data-lucide="key" class="w-5 h-5"></i>
+              </div>
+              <div>
+                <h4 class="font-display font-bold text-sm text-gray-900">Sovereign IP Ownership</h4>
+                <p class="text-xs text-gray-500 leading-relaxed mt-1">
+                  Full intellectual property transfers immediately upon milestone payment confirmations. Complete, clean, legally-binding code copyright assignation.
+                </p>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-4 p-4 rounded-2xl bg-white border border-gray-100/60 shadow-sm hover:border-green-200 transition-colors">
+              <div class="w-10 h-10 rounded-xl bg-green-50 flex items-center justify-center text-green-600 shrink-0">
+                <i data-lucide="shield" class="w-5 h-5"></i>
+              </div>
+              <div>
+                <h4 class="font-display font-bold text-sm text-gray-900">Air-Gapped Sandboxes</h4>
+                <p class="text-xs text-gray-500 leading-relaxed mt-1">
+                  Model training and milestone checks are completed inside secure sandboxes, preventing external leakages of model layers or proprietary training sets.
+                </p>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-4 p-4 rounded-2xl bg-white border border-gray-100/60 shadow-sm hover:border-green-200 transition-colors">
+              <div class="w-10 h-10 rounded-xl bg-green-50 flex items-center justify-center text-green-600 shrink-0">
+                <i data-lucide="file-check" class="w-5 h-5"></i>
+              </div>
+              <div>
+                <h4 class="font-display font-bold text-sm text-gray-900">Strict Non-Disclosures</h4>
+                <p class="text-xs text-gray-500 leading-relaxed mt-1">
+                  Every matched engineer completes comprehensive background screening and legally enforceable NDAs prior to onboarding.
+                </p>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-4 p-4 rounded-2xl bg-white border border-gray-100/60 shadow-sm hover:border-green-200 transition-colors">
+              <div class="w-10 h-10 rounded-xl bg-green-50 flex items-center justify-center text-green-600 shrink-0">
+                <i data-lucide="lock" class="w-5 h-5"></i>
+              </div>
+              <div>
+                <h4 class="font-display font-bold text-sm text-gray-900">Zero Model Data Training</h4>
+                <p class="text-xs text-gray-550 leading-relaxed mt-1">
+                  Your private files, specifications, resumes, or diagnostic data are isolated and are never processed for third-party commercial LLM learning.
+                </p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 11. CONTACT SECTION -->
+  <section id="contact" class="py-16 md:py-24 bg-white relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-stretch">
+        
+        <!-- Contact details -->
+        <div class="lg:col-span-5 flex flex-col justify-between space-y-8 reveal-on-scroll">
+          <div>
+            <span class="text-xs font-semibold text-green-600 uppercase tracking-widest font-display">Get in Touch</span>
+            <h2 class="text-3xl sm:text-4xl font-extrabold text-gray-900 font-display mt-2 tracking-tight">Connect with a Lead Architect</h2>
+            <p class="text-sm text-gray-500 mt-3 leading-relaxed">
+              Have questions about integrations, expert vetting, pricing scales, or custom pipelines? Reach out directly. Our technical leads respond in under 2 hours.
+            </p>
+          </div>
+
+          <div class="space-y-4">
+            <a href="https://wa.me/263785261617" target="_blank" rel="noopener noreferrer" class="flex items-center gap-4 p-4 rounded-2xl bg-gray-50/50 hover:bg-white border border-gray-100 hover:border-green-200 transition-all group">
+              <div class="w-10 h-10 rounded-xl bg-green-50 text-green-600 flex items-center justify-center shrink-0 group-hover:bg-green-600 group-hover:text-white transition-all">
+                <i data-lucide="phone" class="w-5 h-5"></i>
+              </div>
+              <div>
+                <h4 class="font-display font-bold text-xs text-gray-900 uppercase tracking-wider">WhatsApp Instant Chat</h4>
+                <p class="text-sm text-green-600 font-medium mt-0.5">+263 78 526 1617 (Live Now)</p>
+              </div>
+            </a>
+
+            <a href="mailto:architects@mukova.ai" class="flex items-center gap-4 p-4 rounded-2xl bg-gray-50/50 hover:bg-white border border-gray-100 hover:border-green-200 transition-all group">
+              <div class="w-10 h-10 rounded-xl bg-green-50 text-green-600 flex items-center justify-center shrink-0 group-hover:bg-green-600 group-hover:text-white transition-all">
+                <i data-lucide="mail" class="w-5 h-5"></i>
+              </div>
+              <div>
+                <h4 class="font-display font-bold text-xs text-gray-900 uppercase tracking-wider">Email Inquiry</h4>
+                <p class="text-sm text-gray-600 font-medium mt-0.5">architects@mukova.ai</p>
+              </div>
+            </a>
+
+            <div class="flex items-center gap-4 p-4 rounded-2xl bg-gray-50/50 border border-gray-100">
+              <div class="w-10 h-10 rounded-xl bg-green-50 text-green-600 flex items-center justify-center shrink-0">
+                <i data-lucide="map-pin" class="w-5 h-5"></i>
+              </div>
+              <div>
+                <h4 class="font-display font-bold text-xs text-gray-900 uppercase tracking-wider">Corporate Headquarters</h4>
+                <p class="text-sm text-gray-500 font-medium mt-0.5">Suite 400, 100 Pine Street, San Francisco, CA</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Network map vector -->
+          <div class="rounded-2xl border border-gray-100 bg-gray-50/30 p-4 relative overflow-hidden">
+            <span class="text-[9px] font-mono text-gray-400 uppercase tracking-wider block mb-2">Global Engineering Grid Node Map</span>
+            <div class="w-full h-36 flex items-center justify-center bg-white border border-gray-100 rounded-xl relative">
+              <div class="absolute w-20 h-20 bg-green-500/10 blur-xl rounded-full"></div>
+
+              <svg class="w-full h-full p-2 opacity-80" viewBox="0 0 200 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="20" cy="20" r="1.5" fill="#e2e8f0" /><circle cx="40" cy="20" r="1.5" fill="#e2e8f0" /><circle cx="60" cy="20" r="1.5" fill="#e2e8f0" /><circle cx="80" cy="20" r="1.5" fill="#e2e8f0" /><circle cx="100" cy="20" r="1.5" fill="#e2e8f0" /><circle cx="120" cy="20" r="1.5" fill="#e2e8f0" /><circle cx="140" cy="20" r="1.5" fill="#e2e8f0" /><circle cx="160" cy="20" r="1.5" fill="#e2e8f0" />
+                <circle cx="30" cy="40" r="1.5" fill="#e2e8f0" /><circle cx="50" cy="40" r="1.5" fill="#e2e8f0" /><circle cx="70" cy="40" r="1.5" fill="#e2e8f0" /><circle cx="90" cy="40" r="1.5" fill="#e2e8f0" /><circle cx="110" cy="40" r="1.5" fill="#e2e8f0" /><circle cx="130" cy="40" r="1.5" fill="#e2e8f0" /><circle cx="150" cy="40" r="1.5" fill="#e2e8f0" /><circle cx="170" cy="40" r="1.5" fill="#e2e8f0" />
+                <circle cx="20" cy="60" r="1.5" fill="#e2e8f0" /><circle cx="40" cy="60" r="1.5" fill="#e2e8f0" /><circle cx="60" cy="60" r="1.5" fill="#e2e8f0" /><circle cx="80" cy="60" r="1.5" fill="#e2e8f0" /><circle cx="100" cy="60" r="1.5" fill="#e2e8f0" /><circle cx="120" cy="60" r="1.5" fill="#e2e8f0" /><circle cx="140" cy="60" r="1.5" fill="#e2e8f0" /><circle cx="160" cy="60" r="1.5" fill="#e2e8f0" />
+                <circle cx="30" cy="80" r="1.5" fill="#e2e8f0" /><circle cx="50" cy="80" r="1.5" fill="#e2e8f0" /><circle cx="70" cy="80" r="1.5" fill="#e2e8f0" /><circle cx="90" cy="80" r="1.5" fill="#e2e8f0" /><circle cx="110" cy="80" r="1.5" fill="#e2e8f0" /><circle cx="130" cy="80" r="1.5" fill="#e2e8f0" /><circle cx="150" cy="80" r="1.5" fill="#e2e8f0" /><circle cx="170" cy="80" r="1.5" fill="#e2e8f0" />
+
+                <path d="M40 60 Q 90 20, 140 40 Q 110 80, 40 60 Z" stroke="#cbd5e1" stroke-width="1" stroke-dasharray="2 3" />
+                <path d="M40 60 L 100 60 L 140 40" stroke="#10b981" stroke-width="1.5" stroke-dasharray="3 3" class="animate-pulse" />
+
+                <circle cx="40" cy="60" r="4" fill="#10b981" />
+                <circle cx="40" cy="60" r="8" stroke="#10b981" stroke-width="1" class="animate-ping" />
+                <circle cx="140" cy="40" r="4" fill="#10b981" />
+                <circle cx="140" cy="40" r="8" stroke="#10b981" stroke-width="1" class="animate-ping" style="animation-delay: 1s;" />
+                <circle cx="100" cy="60" r="3" fill="#047857" />
+              </svg>
+
+              <div class="absolute bottom-2 left-2 bg-gray-900 text-white font-mono text-[8px] px-2 py-0.5 rounded-md flex items-center gap-1">
+                <span class="w-1 h-1 rounded-full bg-green-400 animate-ping"></span>
+                ACTIVE DEV NODES: 2,400+
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact form -->
+        <div class="lg:col-span-7 bg-white border border-gray-100 rounded-3xl p-8 sm:p-10 shadow-[0_20px_50px_rgba(0,0,0,0.02)] hover:border-gray-200 transition-all reveal-on-scroll" style="transition-delay: 200ms;">
+          <form id="contact-form" class="space-y-6" novalidate>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+              <div>
+                <label for="contact-name" class="block text-xs font-bold text-gray-700 uppercase tracking-wider mb-2">Your Name *</label>
+                <div class="flex items-center gap-3 px-4 py-3 rounded-xl border border-gray-200 bg-gray-50/30 focus-within:border-green-500 focus-within:bg-white transition-all">
+                  <i data-lucide="user" class="w-4 h-4 text-gray-400 shrink-0"></i>
+                  <input type="text" id="contact-name" required placeholder="Steven Mujana" class="w-full text-sm text-gray-800 bg-transparent border-0 outline-none focus:ring-0 placeholder:text-gray-400" />
+                </div>
+              </div>
+              <div>
+                <label for="contact-email" class="block text-xs font-bold text-gray-700 uppercase tracking-wider mb-2">Email Address *</label>
+                <div class="flex items-center gap-3 px-4 py-3 rounded-xl border border-gray-200 bg-gray-50/30 focus-within:border-green-500 focus-within:bg-white transition-all">
+                  <i data-lucide="mail" class="w-4 h-4 text-gray-400 shrink-0"></i>
+                  <input type="email" id="contact-email" required placeholder="marcus@company.com" class="w-full text-sm text-gray-800 bg-transparent border-0 outline-none focus:ring-0 placeholder:text-gray-400" />
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <label for="contact-subject" class="block text-xs font-bold text-gray-700 uppercase tracking-wider mb-2">Subject *</label>
+              <div class="flex items-center gap-3 px-4 py-3 rounded-xl border border-gray-200 bg-gray-50/30 focus-within:border-green-500 focus-within:bg-white transition-all">
+                <i data-lucide="bookmark" class="w-4 h-4 text-gray-400 shrink-0"></i>
+                <input type="text" id="contact-subject" required placeholder="Enterprise matching query / Custom PM request" class="w-full text-sm text-gray-800 bg-transparent border-0 outline-none focus:ring-0 placeholder:text-gray-400" />
+              </div>
+            </div>
+
+            <div>
+              <label for="contact-message" class="block text-xs font-bold text-gray-700 uppercase tracking-wider mb-2">Project Outline or Request Details *</label>
+              <div class="flex items-start gap-3 px-4 py-3 rounded-xl border border-gray-200 bg-gray-50/30 focus-within:border-green-500 focus-within:bg-white transition-all">
+                <i data-lucide="message-square" class="w-4 h-4 text-gray-400 shrink-0 mt-1"></i>
+                <textarea id="contact-message" required rows="4" placeholder="Describe what you want to build, models you're considering, or timeline specifications..." class="w-full text-sm text-gray-800 bg-transparent border-0 outline-none focus:ring-0 placeholder:text-gray-400 resize-none"></textarea>
+              </div>
+            </div>
+
+            <div class="flex items-center gap-2.5 text-xs text-gray-400 border border-dashed border-gray-200 rounded-xl p-3 bg-gray-50/20">
+              <i data-lucide="lock" class="w-4 h-4 text-green-600 shrink-0"></i>
+              <span>Privacy lock engaged: All submitted details are air-gapped and protected by legal, standard unilateral NDAs.</span>
+            </div>
+
+            <button type="submit" class="w-full py-4 rounded-xl text-sm font-semibold text-white bg-green-600 hover:bg-green-700 active:scale-98 transition-all shadow-md shadow-green-500/10 hover-glow">
+              Send Secure Message
+            </button>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 12. FOOTER -->
+  <footer class="bg-gray-900 text-gray-400 border-t border-gray-800 pt-16 pb-8 relative overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-8 lg:gap-12 pb-12 border-b border-gray-800">
+        
+        <div class="lg:col-span-4 space-y-6">
+          <a href="#home" class="flex items-center gap-2 group focus:outline-none" aria-label="Mukova AI Home">
+            <div class="flex items-center justify-center w-10 h-10 rounded-xl bg-gradient-to-tr from-green-600 to-green-400 text-white shadow-md">
+              <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" />
+              </svg>
+            </div>
+            <span class="font-display text-xl font-bold text-white tracking-tight leading-none">Mukova <span class="text-green-400">AI</span></span>
+          </a>
+          <p class="text-xs text-gray-400 leading-relaxed max-w-sm">
+            Mukova AI is an elite developer-matching platform and enterprise PM firm, specializing in low-latency machine learning models, custom neural networks, and scalable production deployment.
+          </p>
+          <div class="flex items-center gap-3">
+            <a href="#" class="w-8 h-8 rounded-lg bg-gray-800 hover:bg-green-600 text-gray-400 hover:text-white flex items-center justify-center transition-all" aria-label="Follow us on LinkedIn"><i data-lucide="linkedin" class="w-4 h-4"></i></a>
+            <a href="#" class="w-8 h-8 rounded-lg bg-gray-800 hover:bg-green-600 text-gray-400 hover:text-white flex items-center justify-center transition-all" aria-label="Follow us on Twitter"><i data-lucide="twitter" class="w-4 h-4"></i></a>
+            <a href="#" class="w-8 h-8 rounded-lg bg-gray-800 hover:bg-green-600 text-gray-400 hover:text-white flex items-center justify-center transition-all" aria-label="Follow us on GitHub"><i data-lucide="github" class="w-4 h-4"></i></a>
+          </div>
+        </div>
+
+        <div class="lg:col-span-2 space-y-4">
+          <h4 class="font-display font-bold text-xs uppercase tracking-wider text-white">Mukova Network</h4>
+          <ul class="space-y-2 text-xs">
+            <li><a href="#home" class="hover:text-green-400 transition-colors">Home</a></li>
+            <li><a href="#about" class="hover:text-green-400 transition-colors">About Us</a></li>
+            <li><a href="#services" class="hover:text-green-400 transition-colors">Services</a></li>
+            <li><a href="#team" class="hover:text-green-400 transition-colors">Vetted Team</a></li>
+            <li><a href="#testimonials" class="hover:text-green-400 transition-colors">Client Trust</a></li>
+            <li><a href="#contact" class="hover:text-green-400 transition-colors">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="lg:col-span-3 space-y-4">
+          <h4 class="font-display font-bold text-xs uppercase tracking-wider text-white">Expertise Specializations</h4>
+          <ul class="space-y-2 text-xs">
+            <li><a href="#services" class="hover:text-green-400 transition-colors">Natural Language Models (LLM)</a></li>
+            <li><a href="#services" class="hover:text-green-400 transition-colors">Computer Vision Networks</a></li>
+            <li><a href="#services" class="hover:text-green-400 transition-colors">Deep Reinforcement Systems</a></li>
+            <li><a href="#services" class="hover:text-green-400 transition-colors">MLOps & Orchestration</a></li>
+            <li><a href="#services" class="hover:text-green-400 transition-colors">Sandboxed Code Audits</a></li>
+          </ul>
+        </div>
+
+        <div class="lg:col-span-3 space-y-4">
+          <h4 class="font-display font-bold text-xs uppercase tracking-wider text-white">Stay Audited</h4>
+          <p class="text-xs text-gray-400 leading-relaxed">
+            Subscribe to receive our bi-weekly whitepapers on modern LLM scalability, cost models, and sandboxing architectures.
+          </p>
+          <div class="flex gap-2">
+            <input type="email" placeholder="email@company.com" class="w-full bg-gray-800 border border-gray-750 rounded-xl px-3 py-2 text-xs text-white outline-none focus:border-green-500 placeholder:text-gray-500" />
+            <button class="bg-green-600 hover:bg-green-700 text-white rounded-xl px-3 py-2 flex items-center justify-center transition-all hover-glow" aria-label="Subscribe">
+              <i data-lucide="send" class="w-3.5 h-3.5"></i>
+            </button>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="flex flex-col sm:flex-row items-center justify-between pt-8 text-[11px] text-gray-550 gap-4">
+        <div>
+          <span>&copy; 2026 Mukova AI Technologies Inc. All intellectual rights reserved.</span>
+        </div>
+        <div class="flex items-center gap-6">
+          <a href="#privacy" class="hover:text-green-400 transition-colors">Privacy Policy</a>
+          <a href="#privacy" class="hover:text-green-400 transition-colors">Terms &amp; Conditions</a>
+          <a href="#privacy" class="hover:text-green-400 transition-colors">Data Sovereignty Charter</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- 13. GLOBAL TOAST NOTIFICATION CONTAINER -->
+  <div id="toast-notification" class="toast-notification hidden">
+    <div class="toast-body flex items-center gap-3 p-4 bg-green-50 text-green-950 border-l-4 border-green-500 rounded-lg shadow-lg">
+      <div class="w-8 h-8 rounded-full bg-green-500/10 text-green-600 flex items-center justify-center shrink-0">
+        <i data-lucide="check" class="w-4 h-4"></i>
+      </div>
+      <div>
+        <p id="toast-message" class="text-xs font-semibold leading-relaxed">Action Completed Successfully!</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Client-side Interactive JavaScript link -->
+  <script src="script.js"></script>
+</body>
+</html>
