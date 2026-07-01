@@ -110,15 +110,8 @@ html.dark .glass-navbar {
   animation: pulse-soft 2.5s ease-in-out infinite;
 }
 
-/* Scroll Fade In Up (Refined) */
+/* Scroll Fade In Up (Refined) - Content always visible by default */
 .reveal-on-scroll {
-  opacity: 0;
-  transform: translateY(24px);
-  transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
-  will-change: transform, opacity;
-}
-
-.reveal-on-scroll.active {
   opacity: 1;
   transform: translateY(0);
 }
